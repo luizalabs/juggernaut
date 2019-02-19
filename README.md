@@ -6,6 +6,8 @@ The main goal of React App Boilerplate is to set patterns to be followed by any 
 
 # References
 
+This project was bootstrapped with [Create React App](CREATE_REACT_APP.md).
+
 # License
 
 The MIT License (MIT)
