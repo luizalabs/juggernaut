@@ -1,8 +1,15 @@
 # React App Boilerplate
 
-The main goal of React App Boilerplate is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
+The main goal of **React App Boilerplate** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
 
 # Patterns
+
+These are some of patterns definitions to help us to keep a default configuration and front-end arquitecture.
+
+- NPM or Yarn? NPM, for sure! 
+- UI Kit library? Jump into [MaterialUI](https://material-ui.com)
+- Lint: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), You shall not pass.
+- Want a component pattern? Here you got: /components/ComponentName/index.jsx
 
 # References
 
