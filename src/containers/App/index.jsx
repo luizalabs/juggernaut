@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import logo from '../assets/image/logo.svg';
-import '../common/style/app.css';
+import logo from '../../assets/images/logo.png';
+import './App.css';
+
+import Welcome from '../../components/Welcome'
 
 class App extends Component {
   render() {
@@ -8,16 +10,17 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <Welcome/>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            to Magalu's boilerplate React App.
           </p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://github.com/SoftboxLab/juggernaut"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Read the docs
           </a>
         </header>
       </div>
