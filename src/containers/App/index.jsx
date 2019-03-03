@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import logo from '../../assets/images/logo.png';
-import './App.css';
 
+import './App.css';
+import logo from '../../assets/images/logo.png';
 import Welcome from '../../components/Welcome'
+
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { exampleAction } from '../../store/actions/exampleAction';
 
 class App extends Component {
   render() {
@@ -12,8 +16,14 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <Welcome/>
           <p>
-            to Magalu's boilerplate React App.
+            { this.props.content.subtitle }
           </p>
+          <button
+            className="App-button"
+            onClick={ () => this.props.exampleAction() }
+          >
+            CLICK ME
+          </button>
           <a
             className="App-link"
             href="https://github.com/SoftboxLab/juggernaut"
@@ -28,4 +38,7 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({ content: state.content })
+const mapDispatchToProps = dispatch => bindActionCreators({ exampleAction }, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
