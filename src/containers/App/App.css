@@ -25,3 +25,15 @@
 .App-link {
   color: #282c34;
 }
+
+h1 {
+  margin-bottom: 0;
+}
+
+.App-button {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: #fff;
+  border: 0;
+  margin-bottom: 15px;
+}
