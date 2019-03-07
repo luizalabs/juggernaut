@@ -8,8 +8,17 @@ These are some of patterns definitions to help us to keep a default configuratio
 
 - NPM or Yarn? NPM, for sure! 
 - UI Kit library? Jump into [MaterialUI](https://material-ui.com)
-- Lint: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), You shall not pass.
+- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), You shall not pass.
 - Want a component pattern? Here you got: /components/ComponentName/index.jsx
+
+### Project structure
+
+- **src/assets**: Static files (images, fonts and icons);
+- **src/components**: Components of React to be shared and reused in the project;
+- **src/common**: Utilities, resources, constants, assets, configurations, i18n and others;
+- **src/containers**: Page components that apply business knowledge and present themselves as pages;
+- **src/store**: State configuration with Redux;
+- **docz**: Docs configuration.
 
 # References
 
