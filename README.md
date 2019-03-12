@@ -2,6 +2,19 @@
 
 The main goal of React App Boilerplate is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
 
+# Startup
+
+Step by step to get this up and running
+
+## Clone repo and enter in folder
+> git clone https://github.com/SoftboxLab/juggernaut.git && cd juggernaut
+
+## Install dependencies
+> npm i
+
+## Start server
+> npm run-script start
+
 # Patterns
 
 # References
