@@ -18,7 +18,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 - **src/common**: Utilities, resources, constants, assets, configurations, i18n and others;
 - **src/containers**: Page components that apply business knowledge and present themselves as pages;
 - **src/store**: State configuration with Redux;
-- **docz**: Docs configuration.
+- **docs**: Docs configuration.
 
 # References
 
