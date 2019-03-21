@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './commons/styles/global';
 import Main from './containers/Main';
@@ -8,7 +9,9 @@ const App = () => (
   <ThemeProvider theme={theme}>
     <Fragment>
       <GlobalStyle />
-      <Main />
+      <BrowserRouter>
+        <Main />
+      </BrowserRouter>
     </Fragment>
   </ThemeProvider>
 );
