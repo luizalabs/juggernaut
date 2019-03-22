@@ -1,4 +1,6 @@
-import Home from '../containers/Home';
+import { lazy } from 'react';
+
+const Home = lazy(() => import('../containers/Home'));
 
 const route = [
   {
