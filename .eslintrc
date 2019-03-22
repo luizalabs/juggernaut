@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "@softboxlab/eslint-config-gandalf-lint",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    "sort-imports": "off",
+    "sort-keys": "off",
+    "nonblock-statement-body-position": [
+      "error",
+      "beside"
+    ],
+    "no-confusing-arrow": [
+      "error",
+      {
+        "allowParens": true
+      }
+    ],
+    "import/order": "off"
+  }
+}

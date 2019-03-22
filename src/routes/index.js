@@ -1,7 +1,7 @@
-import Home from './home';
+import Home from './home'
 
 const routes = [
-  ...Home,
-];
+  ...Home
+]
 
-export default routes;
+export default routes
