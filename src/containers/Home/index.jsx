@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'
+import { withTranslation } from 'react-i18next'
 
-const Home = () => <h1>Home page</h1>;
+const Home = ({ t }) => <h1>{ t('general.welcome') }</h1>
 
-export default Home;
+export default withTranslation()(Home)
