@@ -1,7 +1,7 @@
-import en_us from './en-us'
-import pt_br from './pt-br'
+import en_US from './en-us'
+import pt_BR from './pt-br'
 
 export {
-  en_us,
-  pt_br
+  en_US,
+  pt_BR
 }

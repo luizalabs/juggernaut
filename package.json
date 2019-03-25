@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "i18next": "^15.0.7",
+    "i18next-browser-languagedetector": "^3.0.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-i18next": "^10.6.0",
