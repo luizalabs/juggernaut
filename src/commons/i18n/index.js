@@ -2,16 +2,16 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import {
-  en_US,
-  pt_BR
+  enUS,
+  ptBR
 } from './locales'
 
 const resources = {
   'en-US': {
-    translation: en_US
+    translation: enUS
   },
   'pt-BR': {
-    translation: pt_BR
+    translation: ptBR
   }
 }
 

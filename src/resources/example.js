@@ -21,7 +21,7 @@ const Example = {
 
   save(data) {
     return data.id ? Example.update(data) : Example.create(data)
-  },
+  }
 }
 
 export default Example
