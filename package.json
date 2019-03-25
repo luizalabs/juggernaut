@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "lodash.defaultsdeep": "^4.6.0",
+    "qs": "^6.6.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-router-dom": "^5.0.0",
@@ -25,6 +28,15 @@
   "devDependencies": {
     "@softboxlab/eslint-config-gandalf-lint": "^0.2.1",
     "@softboxlab/eslint-config-gandalf-lint-react": "^0.1.0",
-    "eslint-plugin-react": "^7.12.4"
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "enzyme-to-json": "^3.3.5",
+    "eslint-plugin-react": "^7.12.4",
+    "jest-styled-components": "^6.3.1"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
