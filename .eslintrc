@@ -3,7 +3,14 @@
     "@softboxlab/eslint-config-gandalf-lint",
     "plugin:react/recommended"
   ],
+  "parser": "babel-eslint",
+  "settings": {
+    "react": {
+      "version": "16.8.2"
+    }
+  },
   "rules": {
+    "space-before-function-paren": "off",
     "no-multiple-empty-lines": [
       "error",
       {
@@ -13,6 +20,7 @@
     ],
     "sort-imports": "off",
     "sort-keys": "off",
+    "sort-vars": "error",
     "nonblock-statement-body-position": [
       "error",
       "beside"
@@ -23,6 +31,7 @@
         "allowParens": true
       }
     ],
-    "import/order": "off"
+    "import/order": "off",
+    "sort-imports-es6-autofix/sort-imports-es6": "off"
   }
 }
