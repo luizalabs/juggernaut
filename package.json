@@ -4,10 +4,13 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "i18next": "^15.0.7",
+    "i18next-browser-languagedetector": "^3.0.1",
     "lodash.defaultsdeep": "^4.6.0",
     "qs": "^6.6.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-i18next": "^10.6.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.5",
     "styled-components": "^4.1.3"
