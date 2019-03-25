@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
-import './commons/i18n';
-import GlobalStyle from './commons/styles/global';
-import Main from './containers/Main';
-import theme from './commons/constants/theme';
+import React, { Fragment } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
+import './commons/i18n'
+import GlobalStyle from './commons/styles/global'
+import Main from './containers/Main'
+import theme from './commons/constants/theme'
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -15,6 +15,6 @@ const App = () => (
       </BrowserRouter>
     </Fragment>
   </ThemeProvider>
-);
+)
 
-export default App;
+export default App
