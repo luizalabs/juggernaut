@@ -16,10 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "eject": "react-scripts eject",
+    "eslint": "eslint src --fix"
   },
   "browserslist": [
     ">0.2%",
@@ -28,9 +26,12 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@softboxlab/eslint-config-gandalf-lint": "^0.2.1",
+    "@softboxlab/eslint-config-gandalf-lint-react": "^0.1.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "enzyme-to-json": "^3.3.5",
+    "eslint-plugin-react": "^7.12.4",
     "jest-styled-components": "^6.3.1"
   },
   "jest": {

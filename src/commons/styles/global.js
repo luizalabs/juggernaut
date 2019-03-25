@@ -4,6 +4,6 @@ const globalStyle = createGlobalStyle`
   body {
     margin: 0;
   }
-`;
+`
 
-export default globalStyle;
+export default globalStyle
