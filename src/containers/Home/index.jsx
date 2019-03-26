@@ -6,11 +6,10 @@ const Hello = (t) => {
   return (
     <div>
       <Button variant="contained">
-        Hello World
+        { t('general.welcome') }
       </Button>
     </div>
   )
 }
-// const Home = ({ t }) => <h1 >{ t('general.welcome') }</h1>
 
 export default withTranslation()(Hello)
