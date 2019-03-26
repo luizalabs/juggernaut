@@ -11,6 +11,7 @@
   },
   "rules": {
     "space-before-function-paren": "off",
+    "id-length": 0,
     "no-multiple-empty-lines": [
       "error",
       {
