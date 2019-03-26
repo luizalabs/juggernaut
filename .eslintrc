@@ -1,12 +1,19 @@
 {
   "extends": [
     "@softboxlab/eslint-config-gandalf-lint",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:jest/recommended"
   ],
+  "plugins": ["import"],
   "parser": "babel-eslint",
   "settings": {
     "react": {
       "version": "16.8.2"
+    },
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
     }
   },
   "rules": {
