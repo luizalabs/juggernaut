@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
     "axios": "^0.18.0",
     "i18next": "^15.0.7",
     "i18next-browser-languagedetector": "^3.0.1",
