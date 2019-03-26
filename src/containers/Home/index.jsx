@@ -1,8 +1,9 @@
 import React from 'react'
 import { withTranslation } from 'react-i18next'
+import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
 
-const Hello = (t) => {
+const Home = ({ t }) => {
   return (
     <div>
       <Button variant="contained">
@@ -12,4 +13,8 @@ const Hello = (t) => {
   )
 }
 
-export default withTranslation()(Hello)
+Home.propTypes = {
+  t: PropTypes.func
+}
+
+export default withTranslation()(Home)
