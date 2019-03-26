@@ -26,6 +26,7 @@
         "maxEOF": 1
       }
     ],
+    "complexity": ["error", 4],
     "sort-imports": "off",
     "sort-keys": "off",
     "sort-vars": "error",
