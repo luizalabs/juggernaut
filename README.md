@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React App Boilerplate
 
-## Available Scripts
+The main goal of **React App Boilerplate** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
 
-In the project directory, you can run:
+# Startup
 
-### `npm start`
+Step by step to get this up and running
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Clone repo and enter in folder
+> git clone https://github.com/SoftboxLab/juggernaut.git && cd juggernaut
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Install dependencies
+> npm i
 
-### `npm test`
+## Start server
+> npm run-script start
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Patterns
 
-### `npm run build`
+These are some of patterns definitions to help us to keep a default configuration and front-end arquitecture.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- NPM or Yarn? NPM, for sure! 
+- UI Kit library? Jump into [MaterialUI](https://material-ui.com)
+- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), You shall not pass.
+- Want a component pattern? Here you got: /components/ComponentName/index.jsx
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Project structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **src/assets**: Static files (images, fonts and icons);
+- **src/components**: Components of React to be shared and reused in the project;
+- **src/common**: Utilities, resources, constants, assets, configurations, i18n and others;
+- **src/containers**: Page components that apply business knowledge and present themselves as pages;
+- **src/routes**: Routes of app to be used by SPA and user navigation;
+- **src/store**: State configuration with Redux;
+- **docs**: Docs configuration.
 
-### `npm run eject`
+# References
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project was bootstrapped with [Create React App](CREATE_REACT_APP.md).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# License
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The MIT License (MIT)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Copyright (c) Feross Aboukhadijeh](https://github.com/standard/eslint-config-standard)
 
-## Learn More
+[Copyright (c) 2012 Airbnb](https://github.com/airbnb/javascript)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### Code Splitting
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project licence is also MIT.
