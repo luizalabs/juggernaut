@@ -1,16 +1,29 @@
-import { EXAMPLE_CLICK, EXAMPLE_SUCCESS, EXAMPLE_ERROR } from '../Types'
+import { EXAMPLE_REQUEST, EXAMPLE_SUCCESS, EXAMPLE_ERROR } from '../Types'
 const INITIAL_STATE = {
-  examples: 'to Magalu\'s boilerplate React App.'
+  examples: [],
+  error: '',
+  loading: false
 }
 
+// eslint-disable-next-line complexity
 export default (state = INITIAL_STATE, action) => {
-  switch (action.type) {
-    case EXAMPLE_CLICK:
-      return { ...state, examples: action.payload }
+  const { payload, type } = action
+  switch (type) {
+    case EXAMPLE_REQUEST:
+      return { ...state, loading: true }
     case EXAMPLE_SUCCESS:
-      return { ...state, examples: action.payload }
+      return {
+        ...state,
+        examples: payload,
+        error: false,
+        loading: false
+      }
     case EXAMPLE_ERROR:
-      return { ...state, error: action.payload}
+      return {
+        ...state,
+        error: payload,
+        loading: false
+      }
     default:
       return state
   }

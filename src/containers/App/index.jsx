@@ -7,27 +7,22 @@ import PropTypes from 'prop-types'
 
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { exampleAction } from 'store/actions/exampleAction'
+import { exampleActionRequest } from 'store/actions/exampleAction'
 
 class App extends Component {
   static propTypes = {
-    subtitle: PropTypes.string,
-    exampleAction: PropTypes.func
-  };
+    subtitle: PropTypes.array,
+    exampleActionRequest: PropTypes.func
+  }
   render() {
-    const { exampleAction, subtitle } = this.props
+    const { exampleActionRequest, subtitle } = this.props
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Welcome/>
-          <p>
-            { console.log(subtitle) }
-          </p>
-          <button
-            className="App-button"
-            onClick={ () => exampleAction() }
-          >
+          <Welcome />
+          <p>{console.log(subtitle)}</p>
+          <button className="App-button" onClick={() => exampleActionRequest()}>
             CLICK ME
           </button>
           <a
@@ -45,6 +40,9 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => ({ subtitle: state.exampleReducer.examples })
-const mapDispatchToProps = (dispatch) => bindActionCreators({ exampleAction }, dispatch)
+const mapDispatchToProps = (dispatch) => bindActionCreators({ exampleActionRequest }, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App)
