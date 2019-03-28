@@ -10,7 +10,7 @@ export default (state = INITIAL_STATE, action) => {
     case EXAMPLE_SUCCESS:
       return { ...state, examples: action.payload }
     case EXAMPLE_ERROR:
-      return { ...state}
+      return { ...state, error: action.payload}
     default:
       return state
   }
