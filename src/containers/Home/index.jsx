@@ -1,20 +1,16 @@
 import React from 'react'
 import { withTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
-import Fab from '@material-ui/core/Fab'
+import { Typography } from '@material-ui/core'
 import { SentimentSatisfiedAlt } from '@material-ui/icons';
 
 const Home = ({ t }) => {
   return (
     <div>
-      <Fab
-        variant="extended"
-        size="medium"
-        color="secondary"
-        aria-label='teste' >
-          <SentimentSatisfiedAlt />
-          { t('general.welcome') }
-      </Fab>
+      <Typography color="primary" component="h2" variant="h4" gutterBottom>
+      { t('general.welcome') }
+      <SentimentSatisfiedAlt />
+      </Typography>
     </div>
   )
 }
