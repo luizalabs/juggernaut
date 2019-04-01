@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-const ContainerStyled = styled.div`
+const StyledContainer = styled.div`
   color: ${({ theme }) => theme.primary};
 `
 
-export default ContainerStyled
+export default StyledContainer
