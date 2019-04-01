@@ -12,7 +12,8 @@ const Home = ({ t }) => (
   <StyledContainer>
     <img
       src={logo}
-      alt="Juggernaut Boilerplate"
+      alt="Gif by Reuno"
+      title="Gif by Reuno"
     />
     <StyledTitle>{ t('general.welcome') }</StyledTitle>
     <StyledSubtitle>{ t('general.description') }</StyledSubtitle>

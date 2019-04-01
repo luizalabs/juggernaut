@@ -4,8 +4,9 @@
 
 The main goal of **Juggernaut** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
 
-<p style="margin: 0 auto; width: 50%">
+<p align="center" style="margin: 0 auto; width: 50%">
 	<img src="src/assets/images/juggernaut.gif" />
+  Gif by <a href="https://dribbble.com/Reuno" target="_blank">Reuno</a>
 </p>
 
 ## Startup
