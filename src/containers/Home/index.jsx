@@ -1,6 +1,7 @@
 import React from 'react'
 import { withTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
+// import { Typography } from '@material-ui/core'
 import {
   StyledContainer,
   StyledTitle,
@@ -15,8 +16,12 @@ const Home = ({ t }) => (
       alt="Gif by Reuno"
       title="Gif by Reuno"
     />
-    <StyledTitle>{ t('general.welcome') }</StyledTitle>
-    <StyledSubtitle>{ t('general.description') }</StyledSubtitle>
+    <StyledTitle color="primary" component="h1" variant="h4" gutterBottom>
+      { t('general.welcome') }
+    </StyledTitle>
+    <StyledSubtitle color="primary" component="h3" variant="h5">
+      { t('general.description') }
+    </StyledSubtitle>
   </StyledContainer>
 )
 
