@@ -2,10 +2,10 @@ import React, { Suspense } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import routes from '../../routes'
 import Loading from '../../components/Loading'
-import ContainerStyled from './styled'
+import StyledContainer from './style'
 
 const Main = () => (
-  <ContainerStyled>
+  <StyledContainer>
     <Suspense fallback={<Loading />}>
       <Switch>
         {routes.map((route) => (
@@ -18,7 +18,7 @@ const Main = () => (
         ))}
       </Switch>
     </Suspense>
-  </ContainerStyled>
+  </StyledContainer>
 )
 
 export default Main

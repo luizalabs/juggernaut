@@ -1,27 +1,53 @@
-# React App Boilerplate
+# Juggernaut
 
-The main goal of **React App Boilerplate** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
+## An unstoppable boilerplate
 
-# Startup
+The main goal of **Juggernaut** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
+
+<p align="center" style="margin: 0 auto; width: 50%">
+	<img src="src/assets/images/juggernaut.gif" />
+  Gif by <a href="https://dribbble.com/Reuno" target="_blank">Reuno</a>
+</p>
+
+## Startup
 
 Step by step to get this up and running
 
-## Clone repo and enter in folder
+### Clone repo and go to project folder
+
 > git clone https://github.com/SoftboxLab/juggernaut.git && cd juggernaut
 
-## Install dependencies
-> npm i
+### Install dependencies
 
-## Start server
-> npm run-script start
+```bash
+npm i
+```
 
-# Patterns
+or via yarn:
+
+```bash
+yarn
+```
+
+### Start server
+
+```bash
+npm run-script start
+```
+
+or
+
+```bash
+> yarn start
+```
+
+## Patterns
 
 These are some of patterns definitions to help us to keep a default configuration and front-end arquitecture.
 
-- NPM or Yarn? NPM, for sure! 
+- NPM or Yarn? Your call.
 - UI Kit library? Jump into [MaterialUI](https://material-ui.com)
-- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), You shall not pass.
+- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass.
 - Want a component pattern? Here you got: /components/ComponentName/index.jsx
 
 ### Project structure
@@ -34,11 +60,11 @@ These are some of patterns definitions to help us to keep a default configuratio
 - **src/store**: State configuration with Redux;
 - **docs**: Docs configuration.
 
-# References
+## References
 
 This project was bootstrapped with [Create React App](CREATE_REACT_APP.md).
 
-# License
+## License
 
 The MIT License (MIT)
 
