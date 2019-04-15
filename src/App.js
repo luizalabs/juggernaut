@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { MuiThemeProvider } from '@material-ui/core/styles'
-import CssBaseline from '@material-ui/core/CssBaseline';
+import CssBaseline from '@material-ui/core/CssBaseline'
 import GlobalStyle from './commons/styles/global'
 import Main from './containers/Main'
 import theme from './commons/constants/theme'
