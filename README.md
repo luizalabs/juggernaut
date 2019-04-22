@@ -4,8 +4,9 @@
 
 The main goal of **Juggernaut** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
 
-<p align="center" style="margin: 0 auto; width: 50%">
+<p align="center" style="margin: 0 auto 40px; height: 200px">
 	<img src="src/assets/images/juggernaut.gif" />
+  <br />
   Gif by <a href="https://dribbble.com/Reuno" target="_blank">Reuno</a>
 </p>
 
@@ -38,7 +39,7 @@ npm run start
 or
 
 ```bash
-> yarn start
+yarn start
 ```
 
 ## Patterns
@@ -48,7 +49,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 - NPM or Yarn? Your call.
 - UI Kit library? Jump into [MaterialUI](https://material-ui.com)
 - Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass.
-- Want a component pattern? Here you got: /components/ComponentName/index.jsx
+- Want a component pattern? [Here you get it](src/containers/Home/index.jsx)
 
 ### Project structure
 
