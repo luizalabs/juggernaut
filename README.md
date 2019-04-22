@@ -32,7 +32,7 @@ yarn
 ### Start server
 
 ```bash
-npm run-script start
+npm run start
 ```
 
 or
