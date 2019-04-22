@@ -32,7 +32,7 @@ yarn
 ### Start server
 
 ```bash
-npm run-script start
+npm run start
 ```
 
 or
@@ -54,7 +54,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 
 - **src/assets**: Static files (images, fonts and icons);
 - **src/components**: Components of React to be shared and reused in the project;
-- **src/common**: Utilities, resources, constants, assets, configurations, i18n and others;
+- **src/commons**: Utilities, resources, constants, assets, configurations, i18n and others;
 - **src/containers**: Page components that apply business knowledge and present themselves as pages;
 - **src/routes**: Routes of app to be used by SPA and user navigation;
 - **src/store**: State configuration with Redux;
