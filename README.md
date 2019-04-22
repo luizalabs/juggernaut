@@ -49,7 +49,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 - NPM or Yarn? Your call.
 - UI Kit library? Jump into [MaterialUI](https://material-ui.com)
 - Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass.
-- Want a component pattern? [Here you get it](src/containers/Home/index.jsx)
+- Do you want a component pattern? [Get it here](src/containers/Home/index.jsx)
 
 ### Project structure
 
