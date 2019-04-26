@@ -6,7 +6,7 @@ import {
   StyledTitle,
   StyledSubtitle
 } from './style'
-import logo from '../../assets/images/juggernaut.gif'
+import logo from 'assets/images/juggernaut.gif'
 
 const Home = ({ t }) => (
   <StyledContainer>

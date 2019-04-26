@@ -4,8 +4,9 @@
 
 The main goal of **Juggernaut** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
 
-<p align="center" style="margin: 0 auto; width: 50%">
+<p align="center" style="margin: 0 auto 40px; height: 200px">
 	<img src="src/assets/images/juggernaut.gif" />
+  <br />
   Gif by <a href="https://dribbble.com/Reuno" target="_blank">Reuno</a>
 </p>
 
@@ -32,13 +33,13 @@ yarn
 ### Start server
 
 ```bash
-npm run-script start
+npm run start
 ```
 
 or
 
 ```bash
-> yarn start
+yarn start
 ```
 
 ## Patterns
@@ -48,13 +49,13 @@ These are some of patterns definitions to help us to keep a default configuratio
 - NPM or Yarn? Your call.
 - UI Kit library? Jump into [MaterialUI](https://material-ui.com)
 - Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass.
-- Want a component pattern? Here you got: /components/ComponentName/index.jsx
+- Do you want a component pattern? [Get here](src/containers/Home/index.jsx)
 
 ### Project structure
 
 - **src/assets**: Static files (images, fonts and icons);
 - **src/components**: Components of React to be shared and reused in the project;
-- **src/common**: Utilities, resources, constants, assets, configurations, i18n and others;
+- **src/commons**: Utilities, resources, constants, assets, configurations, i18n and others;
 - **src/containers**: Page components that apply business knowledge and present themselves as pages;
 - **src/routes**: Routes of app to be used by SPA and user navigation;
 - **src/store**: State configuration with Redux;
