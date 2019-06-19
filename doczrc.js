@@ -1,6 +1,7 @@
 export default {
   title: 'Juggernaut',
   description: 'An unstoppable boilerplate',
+  dest: './docs',
   themeConfig: {
     colors: {
       primary: 'tomato'
