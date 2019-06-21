@@ -8,7 +8,7 @@ const Main = () => (
   <StyledContainer>
     <Suspense fallback={<Loading />}>
       <Switch>
-        {routes.map((route) => (
+        {routes.map(route => (
           <Route
             key={route.path}
             path={route.path}

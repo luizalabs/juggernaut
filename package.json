@@ -36,14 +36,17 @@
   ],
   "devDependencies": {
     "@softboxlab/eslint-config-gandalf-lint": "^0.2.1",
-    "docz": "^0.13.7",
-    "docz-theme-default": "^0.13.7",
+    "acorn": "^6.1.1",
+    "acorn-dynamic-import": "^4.0.0",
+    "docz": "^1.2.0",
+    "docz-theme-default": "^1.2.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "enzyme-to-json": "^3.3.5",
     "eslint": "5.16.0",
     "eslint-plugin-react": "^7.12.4",
-    "jest-styled-components": "^6.3.1"
+    "jest-styled-components": "^6.3.1",
+    "webpack": "^4.35.0"
   },
   "jest": {
     "snapshotSerializers": [

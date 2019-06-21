@@ -1,4 +1,4 @@
-export const onResponseError = (error) => Promise.reject(error)
+export const onResponseError = error => Promise.reject(error)
 
-export const validateRequest = (config) => config
+export const validateRequest = config => config
 

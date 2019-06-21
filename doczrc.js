@@ -1,9 +1,8 @@
 export default {
   title: 'Juggernaut',
   description: 'An unstoppable boilerplate',
-  base: '/juggernaut',
-  dest: './docs',
-  hashRouter: true,
+  ignore: ['README.md', 'CREATE_REACT_APP.md'],
+  files: 'docs/**/*.{md,markdown,mdx}',
   themeConfig: {
     colors: {
       primary: 'tomato'
