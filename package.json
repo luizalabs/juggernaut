@@ -24,7 +24,9 @@
     "test": "react-scripts test --maxWorkers=3",
     "test:coverage": "react-scripts test --watchAll=false --coverage --no-cache --logHeapUsage --silent --maxWorkers=2",
     "eject": "react-scripts eject",
-    "eslint": "eslint --ext .jsx,.js src"
+    "eslint": "eslint --ext .jsx,.js src",
+    "docs:dev": "docz dev",
+    "docs:build": "docz build"
   },
   "browserslist": [
     ">0.2%",
@@ -34,6 +36,8 @@
   ],
   "devDependencies": {
     "@softboxlab/eslint-config-gandalf-lint": "^0.2.1",
+    "docz": "^0.13.7",
+    "docz-theme-default": "^0.13.7",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "enzyme-to-json": "^3.3.5",
