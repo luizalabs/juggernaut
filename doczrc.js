@@ -1,6 +1,7 @@
 export default {
   title: 'Juggernaut',
   description: 'An unstoppable boilerplate',
+  base: '/juggernaut',
   dest: './docs',
   hashRouter: true,
   themeConfig: {
