@@ -2,6 +2,7 @@ export default {
   title: 'Juggernaut',
   description: 'An unstoppable boilerplate',
   dest: './docs',
+  hashRouter: true,
   themeConfig: {
     colors: {
       primary: 'tomato'
