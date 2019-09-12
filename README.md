@@ -23,22 +23,10 @@ Step by step to get this up and running
 ### Install dependencies
 
 ```bash
-npm i
-```
-
-or via yarn:
-
-```bash
 yarn
 ```
 
 ### Start server
-
-```bash
-npm run start
-```
-
-or
 
 ```bash
 yarn start
@@ -48,7 +36,7 @@ yarn start
 
 These are some of patterns definitions to help us to keep a default configuration and front-end arquitecture.
 
-- NPM or Yarn? Your call.
+- NPM or Yarn? `npm` has a known issue with hoisted packages ([here](https://npm.community/t/packages-with-peerdependencies-are-incorrectly-hoisted/4794)), that is the reason we use `yarn`.
 - UI Kit library? Jump into [MaterialUI](https://material-ui.com)
 - Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass.
 - Do you want a component pattern? [Get here](src/containers/Home/index.jsx)
