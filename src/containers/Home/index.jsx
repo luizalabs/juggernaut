@@ -21,7 +21,7 @@ const Home = ({ t }) => (
 )
 
 Home.propTypes = {
-  t: PropTypes.func
+  t: PropTypes.func.isRequired
 }
 
 export default withTranslation()(Home)

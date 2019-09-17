@@ -3,23 +3,23 @@ import Api from './api/example-api'
 const path = '/task'
 
 const Example = {
-  all() {
+  all () {
     return Api.request(path)
   },
 
-  delete(id) {
+  delete (id) {
     return Api.request(`${path}/${id}`, { method: 'DELETE' })
   },
 
-  create(data) {
+  create (data) {
     return Api.request(path, { data, method: 'POST' })
   },
 
-  update(data) {
+  update (data) {
     return Api.request(`${path}/${data.id}`, { data, method: 'PUT' })
   },
 
-  save(data) {
+  save (data) {
     return data.id ? Example.update(data) : Example.create(data)
   }
 }
