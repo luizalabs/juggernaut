@@ -34,14 +34,12 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@softboxlab/eslint-config-gandalf-lint": "^1.0.0",
+    "@softboxlab/eslint-config-gandalf-lint-react": "^1.3.0",
     "docz": "^1.3.2",
     "docz-theme-default": "^1.2.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "enzyme-to-json": "^3.3.5",
-    "eslint": "^6.3.0",
-    "eslint-plugin-react": "^7.12.4",
     "jest-styled-components": "^6.3.1"
   },
   "author": "Stanley Gomes <stanleygomesdasilva@gmail.com>",
