@@ -1240,10 +1240,19 @@
     escape-string-regexp "^1.0.5"
     lodash.deburr "^4.1.0"
 
-"@softboxlab/eslint-config-gandalf-lint@^1.0.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@softboxlab/eslint-config-gandalf-lint/-/eslint-config-gandalf-lint-1.1.0.tgz#558652b2763b10a4087feab1fd0bbdf05de58400"
-  integrity sha512-inHHjTOnl2kQf1Jv2nkMros3TPp9OyX6V6ptqZJzTZvx/iOvQ1ZBofy+lwY1cV1CVcRkp+V3WIhvnv4eqSOC7w==
+"@softboxlab/eslint-config-gandalf-lint-react@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@softboxlab/eslint-config-gandalf-lint-react/-/eslint-config-gandalf-lint-react-1.3.0.tgz#6d75471ed301b4bfe213dc040a550cfc11688561"
+  integrity sha512-2PuGz/b1huP0QX0E/bOEM1+km2431kHnR650171a0TAj2S6O564DN6kYix8G2JD2796saXNv/cbzGYPfrIlxDw==
+  dependencies:
+    "@softboxlab/eslint-config-gandalf-lint" "^1.3.0"
+    eslint-plugin-react "^7.14.3"
+    eslint-plugin-react-hooks "^2.0.1"
+
+"@softboxlab/eslint-config-gandalf-lint@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@softboxlab/eslint-config-gandalf-lint/-/eslint-config-gandalf-lint-1.3.0.tgz#c316d1d327fe81a54947e5710135898f511d96d2"
+  integrity sha512-mAGXMwcYyX975C1fIe4L6LTGxB2RNwbzfBjcjgyQ1198ciL8Y2cO9p7YunKYy52KcFP45OnxGDb0t6tSAN2HpA==
   dependencies:
     eslint-config-standard "^12.0.0"
     eslint-plugin-import "^2.16.0"
@@ -4727,7 +4736,12 @@ eslint-plugin-react-hooks@^1.6.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.7.0.tgz#6210b6d5a37205f0b92858f895a4e827020a7d04"
   integrity sha512-iXTCFcOmlWvw4+TOE8CLWj6yX1GwzT0Y6cUfHHZqWnSk144VmVIRcVGtUAzrLES7C798lmvnt02C7rxaOX1HNA==
 
-eslint-plugin-react@7.14.3, eslint-plugin-react@^7.12.4:
+eslint-plugin-react-hooks@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.0.1.tgz#e898ec26a0a335af6f7b0ad1f0bedda7143ed756"
+  integrity sha512-xir+3KHKo86AasxlCV8AHRtIZPHljqCRRUYgASkbatmt0fad4+5GgC7zkT7o/06hdKM6MIwp8giHVXqBPaarHQ==
+
+eslint-plugin-react@7.14.3, eslint-plugin-react@^7.14.3:
   version "7.14.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.14.3.tgz#911030dd7e98ba49e1b2208599571846a66bdf13"
   integrity sha512-EzdyyBWC4Uz2hPYBiEJrKCUi2Fn+BJ9B/pJQcjw5X+x/H2Nm59S4MJIvL4O5NEE0+WbnQwEBxWY03oUk+Bc3FA==
@@ -4783,7 +4797,7 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@^6.1.0, eslint@^6.3.0:
+eslint@^6.1.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.3.0.tgz#1f1a902f67bfd4c354e7288b81e40654d927eb6a"
   integrity sha512-ZvZTKaqDue+N8Y9g0kp6UPZtS4FSY3qARxBs7p4f0H0iof381XHduqVerFWtK8DPtKmemqbqCFENWSQgPR/Gow==

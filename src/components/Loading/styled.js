@@ -5,4 +5,3 @@ const LoadingStyled = styled.div`
 `
 
 export default LoadingStyled
-

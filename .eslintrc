@@ -1,38 +1,11 @@
 {
   "extends": [
-    "@softboxlab/eslint-config-gandalf-lint",
-    "plugin:react/recommended"
+    "@softboxlab/eslint-config-gandalf-lint-react"
   ],
   "parser": "babel-eslint",
   "settings": {
     "react": {
       "version": "16.8.2"
     }
-  },
-  "rules": {
-    "space-before-function-paren": "off",
-    "id-length": 0,
-    "no-multiple-empty-lines": [
-      "error",
-      {
-        "max": 1,
-        "maxEOF": 1
-      }
-    ],
-    "sort-imports": "off",
-    "sort-keys": "off",
-    "sort-vars": "error",
-    "nonblock-statement-body-position": [
-      "error",
-      "beside"
-    ],
-    "no-confusing-arrow": [
-      "error",
-      {
-        "allowParens": true
-      }
-    ],
-    "import/order": "off",
-    "sort-imports-es6-autofix/sort-imports-es6": "off"
   }
 }
