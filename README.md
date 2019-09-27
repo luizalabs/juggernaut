@@ -51,10 +51,6 @@ These are some of patterns definitions to help us to keep a default configuratio
 - **src/store**: State configuration with Redux;
 - **docs**: Docs configuration.
 
-## References
-
-This project was bootstrapped with [Create React App](CREATE_REACT_APP.md).
-
 ## License
 
 The MIT License (MIT)
