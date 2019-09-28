@@ -30,7 +30,7 @@ const wrapperStyle = {
 
 const Loading = () => {
   console.groupCollapsed(name)
-  console.log(`${name} implemented by %cGreg Brewton www.Studio42Dev.com %cfor %cHacktoberfest 2019`, 'color: #007AAF','color: white', 'color: #FF7145')
+  console.log(`${name} implemented by %cGreg Brewton www.Studio42Dev.com %cfor %cHacktoberfest 2019`, 'color: #007AAF', 'color: white', 'color: #FF7145')
   console.groupEnd(name)
   const classes = useStyles()
   return (
