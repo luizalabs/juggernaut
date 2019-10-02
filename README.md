@@ -55,7 +55,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 
 Name | Description
 --- | ---
-[Demo](https://juggernaut-demo.web.app/) | *Examples on how to use Juggernaut*
+[Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
 
 ## License
 
