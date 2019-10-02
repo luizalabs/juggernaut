@@ -51,6 +51,12 @@ These are some of patterns definitions to help us to keep a default configuratio
 - **src/store**: State configuration with Redux;
 - **docs**: Docs configuration.
 
+## Ecosystem
+
+Name | Description
+--- | ---
+[Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
+
 ## License
 
 The MIT License (MIT)
