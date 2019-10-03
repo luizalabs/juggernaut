@@ -41,6 +41,29 @@ These are some of patterns definitions to help us to keep a default configuratio
 - Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass.
 - Do you want a component pattern? [Get here](src/containers/Home/index.jsx)
 
+Why Formik?
+
+- Getting values in and out of form state
+- Validation and error messages
+- Handling form submission
+- Has no link to redux
+
+Why Axios?
+
+- Intercept request and response
+- Make XMLHttpRequests from the browser
+- Supports the Promise API
+- Transform request and response data
+- Cancel requests
+- Automatic transforms for JSON data
+- Client side support for protecting against XSRF
+
+Why Material?
+
+- dynamic styles generated at runtime
+- nested themes with intuitive overrides
+- reduced load time with code splitting
+
 ### Project structure
 
 - **src/assets**: Static files (images, fonts and icons);
