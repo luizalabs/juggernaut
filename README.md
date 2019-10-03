@@ -60,9 +60,9 @@ Why Axios?
 
 Why Material?
 
-- dynamic styles generated at runtime
-- nested themes with intuitive overrides
-- reduced load time with code splitting
+- Dynamic styles generated at runtime
+- Nested themes with intuitive overrides
+- Reduced load time with code splitting
 
 ### Project structure
 
