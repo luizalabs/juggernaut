@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  juggernaut:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: juggernaut-boilerplate
+    container_name: juggernaut-boilerplate
+    environment:
+      - NODE_ENV=development
+    command: yarn dev
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+      - '/app/node_modules'
