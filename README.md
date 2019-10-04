@@ -56,7 +56,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 Name | Description
 --- | ---
 [Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
-[Repo Demo](https://github.com/SoftboxLab/juggernaut-demo) | *Samples repositories*
+[Demo Repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut Demo source code*
 
 ## License
 
