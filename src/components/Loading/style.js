@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const StyledContainer = styled.div`
+const LoadingStyled = styled.div`
 position: absolute;
 height: 1px;
 width: 1px;
@@ -11,4 +11,4 @@ right: 0;
 margin: auto;
 `
 
-export default StyledContainer
+export default LoadingStyled
