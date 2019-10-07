@@ -1,0 +1,30 @@
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules
+
+build:
+  stage: build
+  image: node:lts-alpine
+  script:
+    - npm install --progress=false
+    - npm run build --prod
+  artifacts:
+    paths:
+      - build
+
+pages:
+  stage: deploy
+  image: alpine
+  only:
+    - master
+  script:
+    - cp public/index.html public/404.html
+    - rm -rf public
+    - mv build public
+  artifacts:
+    paths:
+    - public
