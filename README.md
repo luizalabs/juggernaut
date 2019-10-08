@@ -36,10 +36,10 @@ yarn start
 
 These are some of patterns definitions to help us to keep a default configuration and front-end arquitecture.
 
-- NPM or Yarn? `npm` has a known issue with hoisted packages ([here](https://npm.community/t/packages-with-peerdependencies-are-incorrectly-hoisted/4794)), that is the reason we use `yarn`.
-- UI Kit library? Jump into [MaterialUI](https://material-ui.com)
-- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass.
-- Do you want a component pattern? [Get here](src/containers/Home/index.jsx)
+- NPM or Yarn? `npm` has a known issue with hoisted packages ([here](https://npm.community/t/packages-with-peerdependencies-are-incorrectly-hoisted/4794)), that is the reason we use `yarn`;
+- UI Kit library? Jump into [MaterialUI](https://material-ui.com);
+- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass;
+- Do you want a component pattern? [Get here](src/containers/Home/index.jsx);
 
 ### Project structure
 
@@ -56,6 +56,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 Name | Description
 --- | ---
 [Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
+[Demo Repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut Demo source code*
 
 ## License
 
