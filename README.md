@@ -17,7 +17,7 @@ The main goal of **Juggernaut** is to set patterns to be followed by any and eve
 Name | Description
 --- | ---
 [Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
-[Demo Repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut Demo source code*
+[Demo repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut demo source code*
 
 ## Startup
 
