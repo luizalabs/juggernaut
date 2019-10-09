@@ -1,7 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7cdc05a8-9023-4af3-8f04-4b8b63ec51f3/deploy-status)](https://app.netlify.com/sites/juggernaut/deploys)
 
 # Juggernaut
-
 ## An unstoppable boilerplate
 
 The main goal of **Juggernaut** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
@@ -11,6 +10,13 @@ The main goal of **Juggernaut** is to set patterns to be followed by any and eve
   <br />
   Gif by <a href="https://dribbble.com/Reuno" target="_blank">Reuno</a>
 </p>
+
+## Ecosystem
+
+Name | Description
+--- | ---
+[Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
+[Demo Repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut Demo source code*
 
 ## Startup
 
@@ -50,13 +56,6 @@ These are some of patterns definitions to help us to keep a default configuratio
 - **src/routes**: Routes of app to be used by SPA and user navigation;
 - **src/store**: State configuration with Redux;
 - **docs**: Docs configuration.
-
-## Ecosystem
-
-Name | Description
---- | ---
-[Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
-[Demo Repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut Demo source code*
 
 ## License
 
