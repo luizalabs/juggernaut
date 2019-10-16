@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7cdc05a8-9023-4af3-8f04-4b8b63ec51f3/deploy-status)](https://app.netlify.com/sites/juggernaut/deploys)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 # Juggernaut
 
@@ -87,3 +88,19 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 This project licence is also MIT.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/marlonmaxwel"><img src="https://avatars1.githubusercontent.com/u/8551142?v=4" width="100px;" alt="Marlon Maxwel"/><br /><sub><b>Marlon Maxwel</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=marlonmleite" title="Documentation">📖</a> <a href="https://github.com/SoftboxLab/juggernaut/commits?author=marlonmleite" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
