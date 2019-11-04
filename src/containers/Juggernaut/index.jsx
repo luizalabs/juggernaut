@@ -2,9 +2,9 @@ import React, { Fragment } from 'react'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 import { ThemeProvider } from 'styled-components'
-import GlobalStyle from 'commons/styles/global'
+import GlobalStyle from 'common/styles/global'
 import PropTypes from 'prop-types'
-import 'commons/i18n'
+import 'common/i18n'
 
 const Juggernaut = ({ children, theme }) => (
   <MuiThemeProvider theme={theme}>

@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7cdc05a8-9023-4af3-8f04-4b8b63ec51f3/deploy-status)](https://app.netlify.com/sites/juggernaut/deploys)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 # Juggernaut
 
@@ -6,11 +7,18 @@
 
 The main goal of **Juggernaut** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
 
-<p align="center" style="margin: 0 auto 40px; height: 200px">
-	<img src="src/assets/images/juggernaut.gif" />
+<p align="center">
+	<img src="src/assets/images/juggernaut.gif" width="400px" />
   <br />
   Gif by <a href="https://dribbble.com/Reuno" target="_blank">Reuno</a>
 </p>
+
+## Ecosystem
+
+Name | Description
+--- | ---
+[Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
+[Demo repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut demo source code*
 
 ## Startup
 
@@ -36,24 +44,21 @@ yarn start
 
 These are some of patterns definitions to help us to keep a default configuration and front-end arquitecture.
 
-- NPM or Yarn? `npm` has a known issue with hoisted packages ([here](https://npm.community/t/packages-with-peerdependencies-are-incorrectly-hoisted/4794)), that is the reason we use `yarn`.
-- UI Kit library? Jump into [MaterialUI](https://material-ui.com)
-- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass.
-- Do you want a component pattern? [Get here](src/containers/Home/index.jsx)
+- NPM or Yarn? `npm` has a known issue with hoisted packages ([here](https://npm.community/t/packages-with-peerdependencies-are-incorrectly-hoisted/4794)), that is the reason we use `yarn`;
+- UI Kit library? Jump into [MaterialUI](https://material-ui.com);
+- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass;
+- Do you want a component pattern? [Get here](src/containers/Home/index.jsx);
 
 ### Project structure
 
 - **src/assets**: Static files (images, fonts and icons);
 - **src/components**: Components of React to be shared and reused in the project;
-- **src/commons**: Utilities, resources, constants, assets, configurations, i18n and others;
+- **src/common**: Utilities, resources, constants, assets, configurations, i18n and others;
 - **src/containers**: Page components that apply business knowledge and present themselves as pages;
 - **src/routes**: Routes of app to be used by SPA and user navigation;
 - **src/store**: State configuration with Redux;
 - **docs**: Docs configuration.
 
-## References
-
-This project was bootstrapped with [Create React App](CREATE_REACT_APP.md).
 
 ## License
 
@@ -83,3 +88,19 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 This project licence is also MIT.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/marlonmaxwel"><img src="https://avatars1.githubusercontent.com/u/8551142?v=4" width="100px;" alt="Marlon Maxwel"/><br /><sub><b>Marlon Maxwel</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=marlonmleite" title="Documentation">📖</a> <a href="https://github.com/SoftboxLab/juggernaut/commits?author=marlonmleite" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
