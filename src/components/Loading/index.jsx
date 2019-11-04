@@ -4,7 +4,7 @@ import LoadingStyled from './style'
 
 const Loading = () => (
   <LoadingStyled>
-    <CircularProgress/>
+    <CircularProgress />
   </LoadingStyled>
 )
 
