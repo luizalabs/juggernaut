@@ -45,7 +45,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 
 [Why Axios?](https://github.com/axios/axios#features)
 
-[Why Material](https://material-ui.com/blog/material-ui-v4-is-out)
+[Why Material?](https://material-ui.com/blog/material-ui-v4-is-out)
 
 ### Project structure
 
