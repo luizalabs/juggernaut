@@ -14,6 +14,17 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "vilaboim",
+      "name": "Lucas Vilaboim",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4191549?v=4",
+      "profile": "http://vilaboim.com",
+      "contributions": [
+        "doc",
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
