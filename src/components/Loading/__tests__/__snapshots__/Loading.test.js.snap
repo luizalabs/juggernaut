@@ -2,6 +2,6 @@
 
 exports[`Loading should render 1`] = `
 <styled.div>
-  Loading...
+  <WithStyles(ForwardRef(CircularProgress)) />
 </styled.div>
 `;
