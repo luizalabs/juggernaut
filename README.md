@@ -41,11 +41,11 @@ These are some of patterns definitions to help us to keep a default configuratio
 - Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass.
 - Do you want a component pattern? [Get here](src/containers/Home/index.jsx)
 
-[Why Formik?](https://jaredpalmer.com/formik/docs/overview#motivation)
+- [Why Formik?](https://jaredpalmer.com/formik/docs/overview#motivation)
 
-[Why Axios?](https://github.com/axios/axios#features)
+- [Why Axios?](https://github.com/axios/axios#features)
 
-[Why Material?](https://material-ui.com/blog/material-ui-v4-is-out)
+- [Why Material?](https://material-ui.com/blog/material-ui-v4-is-out)
 
 ### Project structure
 
