@@ -25,6 +25,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "rafael1995",
+      "name": "Rafael Alves",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10281577?v=4",
+      "profile": "https://github.com/rafael1995",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
