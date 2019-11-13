@@ -25,6 +25,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "stanleygomes",
+      "name": "Stanley",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5298153?v=4",
+      "profile": "https://www.linkedin.com/in/stanley-gomes",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
