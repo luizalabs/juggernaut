@@ -25,6 +25,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "wendreo",
+      "name": "Wendreo Araujo",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13650366?v=4",
+      "profile": "https://github.com/wendreo",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
