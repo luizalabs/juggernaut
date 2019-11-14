@@ -46,7 +46,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 
 - NPM or Yarn? `npm` has a known issue with hoisted packages ([here](https://npm.community/t/packages-with-peerdependencies-are-incorrectly-hoisted/4794)), that is the reason we use `yarn`;
 - UI Kit library? Jump into [MaterialUI](https://material-ui.com);
-- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass;
+- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), bad code shall not pass;
 - Do you want a component pattern? [Get here](src/containers/Home/index.jsx);
 
 ### Project structure
