@@ -1,6 +1,11 @@
 # Tatooine blog
 
+A blog from far and hot tatooine system 🌕 📚 📝
+
 Bootstraped with [Juggernaut](https://github.com/SoftboxLab/juggernaut)
+
+
+![tatooine blog](https://i.imgur.com/7OoLti1.png)
 
 ## Startup
 
