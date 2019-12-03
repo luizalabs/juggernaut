@@ -31,20 +31,20 @@ Step by step to get this up and running
 ### Install dependencies
 
 ```bash
-yarn
+npm i
 ```
 
 ### Start server
 
 ```bash
-yarn start
+npm run start
 ```
 
 ## Patterns
 
 These are some of patterns definitions to help us to keep a default configuration and front-end arquitecture.
 
-- NPM or Yarn? `npm` has a known issue with hoisted packages ([here](https://npm.community/t/packages-with-peerdependencies-are-incorrectly-hoisted/4794)), that is the reason we use `yarn`;
+- NPM or Yarn? We chose `npm`, but feel free to make your choice;
 - UI Kit library? Jump into [MaterialUI](https://material-ui.com);
 - Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass;
 - Do you want a component pattern? [Get here](src/containers/Home/index.jsx);
@@ -64,7 +64,6 @@ These are some of patterns definitions to help us to keep a default configuratio
 - **src/routes**: Routes of app to be used by SPA and user navigation;
 - **src/store**: State configuration with Redux;
 - **docs**: Docs configuration.
-
 
 ## License
 
