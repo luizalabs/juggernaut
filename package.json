@@ -40,7 +40,6 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
-    "eslint-config-prettier": "^6.10.0",
     "jest-styled-components": "^7.0.0"
   },
   "author": "Stanley Gomes <stanleygomesdasilva@gmail.com>",
