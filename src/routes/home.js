@@ -5,7 +5,7 @@ const Home = lazy(() => import('containers/Home'))
 const route = [
   {
     path: '/',
-    main: Home,
+    component: Home,
     exact: true
   }
 ]
