@@ -3,10 +3,9 @@ import { shallow } from 'enzyme'
 import Loading from '..'
 
 describe('Loading', () => {
-  it('should render', () => {
+  test('should render', () => {
     const component = shallow(<Loading />)
 
     expect(component).toMatchSnapshot()
   })
 })
-
