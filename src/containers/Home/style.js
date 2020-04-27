@@ -18,7 +18,7 @@ const StyledSubtitle = styled(Typography)`
   margin: 0;
 `
 
-const StyleImage = styled.img`
+const StyledImage = styled.img`
   max-width: 100%;
 `
 
@@ -26,5 +26,5 @@ export {
   StyledContainer,
   StyledTitle,
   StyledSubtitle,
-  StyleImage
+  StyledImage
 }
