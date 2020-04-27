@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withTranslation } from 'react-i18next'
 import logo from 'assets/images/juggernaut.gif'
-import { StyledContainer, StyledTitle, StyledSubtitle } from './style'
+import { StyledContainer, StyledTitle, StyledSubtitle, StyleImage } from './style'
 
 const Home = ({ t }) => (
   <StyledContainer>
-    <img
+    <StyleImage
       src={logo}
       alt="Gif by Reuno"
       title="Gif by Reuno"
