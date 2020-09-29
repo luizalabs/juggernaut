@@ -1,5 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7cdc05a8-9023-4af3-8f04-4b8b63ec51f3/deploy-status)](https://app.netlify.com/sites/juggernaut/deploys)
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
 
 # Juggernaut
 
@@ -13,34 +13,36 @@ The main goal of **Juggernaut** is to set patterns to be followed by any and eve
   Gif by <a href="https://dribbble.com/Reuno" target="_blank">Reuno</a>
 </p>
 
-## Ecosystem
+## :computer: Ecosystem
 
 Name | Description
 --- | ---
 [Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
 [Demo repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut demo source code*
 
-## Startup
+## :rocket: Startup
 
 Step by step to get this up and running
 
 ### Clone repo and go to project folder
 
-> git clone https://github.com/SoftboxLab/juggernaut.git && cd juggernaut
+```bash
+$ git clone https://github.com/SoftboxLab/juggernaut.git && cd juggernaut
+```
 
 ### Install dependencies
 
 ```bash
-npm i
+$ npm i
 ```
 
 ### Start server
 
 ```bash
-npm run start
+$ npm run start
 ```
 
-## Patterns
+## :heavy_check_mark: Patterns
 
 These are some of patterns definitions to help us to keep a default configuration and front-end arquitecture.
 
@@ -48,14 +50,11 @@ These are some of patterns definitions to help us to keep a default configuratio
 - UI Kit library? Jump into [MaterialUI](https://material-ui.com);
 - Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass;
 - Do you want a component pattern? [Get here](src/containers/Home/index.jsx);
-
 - [Why Formik?](https://jaredpalmer.com/formik/docs/overview#motivation)
-
 - [Why Axios?](https://github.com/axios/axios#features)
-
 - [Why Material?](https://material-ui.com/blog/material-ui-v4-is-out)
 
-### Project structure
+## :open_file_folder: Project structure
 
 - **src/assets**: Static files (images, fonts and icons);
 - **src/components**: Components of React to be shared and reused in the project;
@@ -65,7 +64,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 - **src/store**: State configuration with Redux;
 - **docs**: Docs configuration.
 
-## License
+## :scroll: License
 
 The MIT License (MIT)
 
@@ -94,7 +93,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 This project licence is also MIT.
 
-## Contributors ✨
+## :star2: Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -106,9 +105,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://vilaboim.com"><img src="https://avatars2.githubusercontent.com/u/4191549?v=4" width="100px;" alt="Lucas Vilaboim"/><br /><sub><b>Lucas Vilaboim</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=vilaboim" title="Documentation">📖</a> <a href="https://github.com/SoftboxLab/juggernaut/commits?author=vilaboim" title="Code">💻</a> <a href="#design-vilaboim" title="Design">🎨</a></td>
     <td align="center"><a href="http://hugonasciutti.com"><img src="https://avatars3.githubusercontent.com/u/14843959?v=4" width="100px;" alt="Hugo Nasciutti"/><br /><sub><b>Hugo Nasciutti</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=hugonasciutti" title="Code">💻</a></td>
     <td align="center"><a href="http://www.mkny.com.br/"><img src="https://avatars0.githubusercontent.com/u/4579679?v=4" width="100px;" alt="Marcony Neves"/><br /><sub><b>Marcony Neves</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=mkny" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/stanleygomes"><img src="https://avatars3.githubusercontent.com/u/5298153?s=460&u=2a553b173f4f719b9d221b43b7022a4801fc9ee6&v=4" width="100px;" alt="Stanley Gomes"/><br /><sub><b>Stanley Gomes</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=stanleygomes" title="Code">💻</a></td>
   </tr>
 </table>
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
