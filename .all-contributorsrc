@@ -43,11 +43,21 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ricardoalvarenga101",
+      "name": "Ricardo Alvarenga",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7224500?v=4",
+      "profile": "https://github.com/ricardoalvarenga101",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "juggernaut",
   "projectOwner": "SoftboxLab",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
