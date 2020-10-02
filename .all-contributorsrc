@@ -43,11 +43,21 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "raphaelcunha",
+      "name": "Raphael Cunha",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3853552?v=4",
+      "profile": "https://github.com/raphaelcunha",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "juggernaut",
   "projectOwner": "SoftboxLab",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
