@@ -98,16 +98,20 @@ This project licence is also MIT.
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://www.linkedin.com/in/marlonmaxwel"><img src="https://avatars1.githubusercontent.com/u/8551142?v=4" width="100px;" alt="Marlon Maxwel"/><br /><sub><b>Marlon Maxwel</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=marlonmleite" title="Documentation">📖</a> <a href="https://github.com/SoftboxLab/juggernaut/commits?author=marlonmleite" title="Code">💻</a></td>
-    <td align="center"><a href="http://vilaboim.com"><img src="https://avatars2.githubusercontent.com/u/4191549?v=4" width="100px;" alt="Lucas Vilaboim"/><br /><sub><b>Lucas Vilaboim</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=vilaboim" title="Documentation">📖</a> <a href="https://github.com/SoftboxLab/juggernaut/commits?author=vilaboim" title="Code">💻</a> <a href="#design-vilaboim" title="Design">🎨</a></td>
-    <td align="center"><a href="http://hugonasciutti.com"><img src="https://avatars3.githubusercontent.com/u/14843959?v=4" width="100px;" alt="Hugo Nasciutti"/><br /><sub><b>Hugo Nasciutti</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=hugonasciutti" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.mkny.com.br/"><img src="https://avatars0.githubusercontent.com/u/4579679?v=4" width="100px;" alt="Marcony Neves"/><br /><sub><b>Marcony Neves</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=mkny" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/stanleygomes"><img src="https://avatars3.githubusercontent.com/u/5298153?s=460&u=2a553b173f4f719b9d221b43b7022a4801fc9ee6&v=4" width="100px;" alt="Stanley Gomes"/><br /><sub><b>Stanley Gomes</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=stanleygomes" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/marlonmaxwel"><img src="https://avatars1.githubusercontent.com/u/8551142?v=4" width="100px;" alt=""/><br /><sub><b>Marlon Maxwel</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=marlonmleite" title="Documentation">📖</a> <a href="https://github.com/SoftboxLab/juggernaut/commits?author=marlonmleite" title="Code">💻</a></td>
+    <td align="center"><a href="http://vilaboim.com"><img src="https://avatars2.githubusercontent.com/u/4191549?v=4" width="100px;" alt=""/><br /><sub><b>Lucas Vilaboim</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=vilaboim" title="Documentation">📖</a> <a href="https://github.com/SoftboxLab/juggernaut/commits?author=vilaboim" title="Code">💻</a> <a href="#design-vilaboim" title="Design">🎨</a></td>
+    <td align="center"><a href="http://hugonasciutti.com"><img src="https://avatars3.githubusercontent.com/u/14843959?v=4" width="100px;" alt=""/><br /><sub><b>Hugo Nasciutti</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=hugonasciutti" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.mkny.com.br/"><img src="https://avatars0.githubusercontent.com/u/4579679?v=4" width="100px;" alt=""/><br /><sub><b>Marcony Neves</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=mkny" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/raphaelcunha"><img src="https://avatars2.githubusercontent.com/u/3853552?v=4" width="100px;" alt=""/><br /><sub><b>Raphael Cunha</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=raphaelcunha" title="Code">💻</a></td>
   </tr>
 </table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
