@@ -5,18 +5,19 @@
   "dependencies": {
     "@material-ui/core": "^4.9.3",
     "@material-ui/icons": "^4.9.1",
-    "axios": "^0.19.2",
-    "i18next": "^19.1.0",
-    "i18next-browser-languagedetector": "^5.0.0",
+    "@mdx-js/mdx": "^1.6.18",
+    "axios": "^0.20.0",
+    "i18next": "^19.8.1",
+    "i18next-browser-languagedetector": "^6.0.1",
     "lodash.defaultsdeep": "^4.6.1",
     "prop-types": "^15.7.2",
     "qs": "^6.9.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-i18next": "^11.3.3",
+    "react-i18next": "^11.7.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.0",
-    "styled-components": "^5.0.1"
+    "react-scripts": "^3.4.3",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,9 +39,9 @@
     "docz": "^2.2.0",
     "docz-theme-default": "^1.2.0",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "enzyme-to-json": "^3.4.4",
-    "jest-styled-components": "^7.0.0"
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "jest-styled-components": "^7.0.3"
   },
   "author": "Stanley Gomes <stanleygomesdasilva@gmail.com>",
   "contributors": [
