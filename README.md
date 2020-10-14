@@ -92,27 +92,3 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 This project licence is also MIT.
-
-## :star2: Contributors
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://www.linkedin.com/in/marlonmaxwel"><img src="https://avatars1.githubusercontent.com/u/8551142?v=4" width="100px;" alt=""/><br /><sub><b>Marlon Maxwel</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=marlonmleite" title="Documentation">📖</a> <a href="https://github.com/SoftboxLab/juggernaut/commits?author=marlonmleite" title="Code">💻</a></td>
-    <td align="center"><a href="http://vilaboim.com"><img src="https://avatars2.githubusercontent.com/u/4191549?v=4" width="100px;" alt=""/><br /><sub><b>Lucas Vilaboim</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=vilaboim" title="Documentation">📖</a> <a href="https://github.com/SoftboxLab/juggernaut/commits?author=vilaboim" title="Code">💻</a> <a href="#design-vilaboim" title="Design">🎨</a></td>
-    <td align="center"><a href="http://hugonasciutti.com"><img src="https://avatars3.githubusercontent.com/u/14843959?v=4" width="100px;" alt=""/><br /><sub><b>Hugo Nasciutti</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=hugonasciutti" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.mkny.com.br/"><img src="https://avatars0.githubusercontent.com/u/4579679?v=4" width="100px;" alt=""/><br /><sub><b>Marcony Neves</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=mkny" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/ricardoalvarenga101"><img src="https://avatars2.githubusercontent.com/u/7224500?v=4" width="100px;" alt=""/><br /><sub><b>Ricardo Alvarenga</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=ricardoalvarenga101" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/victormaestri"><img src="https://avatars2.githubusercontent.com/u/6106336?v=4" width="100px;" alt=""/><br /><sub><b>Victor Maestri</b></sub></a><br /><a href="https://github.com/SoftboxLab/juggernaut/commits?author=victormaestri" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
