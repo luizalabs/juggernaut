@@ -57,7 +57,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 ## :open_file_folder: Project structure
 
 - **src/assets**: Static files (images, fonts and icons);
-- **src/resources**: Api calls;
+- **src/resources**: API and endpoints configurations;
 - **src/components**: Components of React to be shared and reused in the project;
 - **src/common**: Utilities, resources, constants, assets, configurations, i18n and others;
 - **src/containers**: Page components that apply business knowledge and present themselves as pages;
