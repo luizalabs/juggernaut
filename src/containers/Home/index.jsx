@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withTranslation } from 'react-i18next'
+import { Trans, withTranslation } from 'react-i18next'
 import logo from 'assets/images/juggernaut.gif'
 import { StyledContainer, StyledTitle, StyledSubtitle, StyledImage } from './style'
 
@@ -12,7 +12,7 @@ const Home = ({ t }) => (
       title="Gif by Reuno"
     />
     <StyledTitle color="primary" component="h1" variant="h4" gutterBottom>
-      { t('general.welcome') }
+      <Trans>{t('general.welcome')}</Trans>
     </StyledTitle>
     <StyledSubtitle color="primary" component="h3" variant="h5">
       { t('general.description') }
