@@ -2,22 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Trans, withTranslation } from 'react-i18next'
 import logo from 'assets/images/juggernaut.gif'
-import { StyledContainer, StyledTitle, StyledSubtitle, StyledImage } from './style'
+import { Container, Title, Subtitle, Image } from './styles'
 
 const Home = ({ t }) => (
-  <StyledContainer>
-    <StyledImage
+  <Container>
+    <Image
       src={logo}
       alt="Gif by Reuno"
       title="Gif by Reuno"
     />
-    <StyledTitle color="primary" component="h1" variant="h4" gutterBottom>
+    <Title color="primary" component="h1" variant="h4" gutterBottom>
       <Trans>{t('general.welcome')}</Trans>
-    </StyledTitle>
-    <StyledSubtitle color="primary" component="h3" variant="h5">
+    </Title>
+    <Subtitle color="primary" component="h3" variant="h5">
       { t('general.description') }
-    </StyledSubtitle>
-  </StyledContainer>
+    </Subtitle>
+  </Container>
 )
 
 Home.propTypes = {
