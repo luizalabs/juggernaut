@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Trans, useTranslation } from 'react-i18next'
 import logo from 'assets/images/juggernaut.gif'
 import { Container, Title, Subtitle, Image } from './styles'
@@ -22,10 +21,6 @@ const Home = () => {
       </Subtitle>
     </Container>
   )
-}
-
-Home.propTypes = {
-  t: PropTypes.func.isRequired
 }
 
 export default Home
