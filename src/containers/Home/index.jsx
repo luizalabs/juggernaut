@@ -1,27 +1,26 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Trans, withTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import logo from 'assets/images/juggernaut.gif'
 import { Container, Title, Subtitle, Image } from './styles'
 
-const Home = ({ t }) => (
-  <Container>
-    <Image
-      src={logo}
-      alt="Gif by Reuno"
-      title="Gif by Reuno"
-    />
-    <Title color="primary" component="h1" variant="h4" gutterBottom>
-      <Trans>{t('general.welcome')}</Trans>
-    </Title>
-    <Subtitle color="primary" component="h3" variant="h5">
-      { t('general.description') }
-    </Subtitle>
-  </Container>
-)
+const Home = () => {
+  const { t } = useTranslation()
 
-Home.propTypes = {
-  t: PropTypes.func.isRequired
+  return (
+    <Container>
+      <Image
+        src={logo}
+        alt="Gif by Reuno"
+        title="Gif by Reuno"
+      />
+      <Title color="primary" component="h1" variant="h4" gutterBottom>
+        <Trans>{t('general.welcome')}</Trans>
+      </Title>
+      <Subtitle color="primary" component="h3" variant="h5">
+        { t('general.description') }
+      </Subtitle>
+    </Container>
+  )
 }
 
-export default withTranslation()(Home)
+export default Home
