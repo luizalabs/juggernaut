@@ -1,6 +1,6 @@
 # base image
-FROM node:10-alpine
-   
+FROM node:14-alpine
+
 # set working directory
 WORKDIR /app
 
@@ -10,9 +10,9 @@ ENV PATH /app/node_modules/.bin:$PATH
 # install and cache app dependencies
 COPY package.json /app/package.json
 
-RUN yarn
+RUN npm i
 
 EXPOSE 3000
 
 # start app
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
