@@ -4,7 +4,7 @@
 
 ## An unstoppable boilerplate
 
-The main goal of **Juggernaut** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
+The main goal of **Juggernaut** is to set patterns to be followed by any and every Luizalabs front-end developer working on React projects. Check out the patterns we defined this document bellow.
 
 <p align="center">
 	<img src="src/assets/images/juggernaut.gif" width="400px" />
@@ -17,7 +17,7 @@ The main goal of **Juggernaut** is to set patterns to be followed by any and eve
 Name | Description
 --- | ---
 [Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
-[Demo repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut demo source code*
+[Demo repository](https://github.com/luizalabs/juggernaut-demo) | *Juggernaut demo source code*
 
 ## :rocket: Startup
 
@@ -26,7 +26,7 @@ Step by step to get this up and running
 ### Clone repo and go to project folder
 
 ```bash
-$ git clone https://github.com/SoftboxLab/juggernaut.git && cd juggernaut
+$ git clone https://github.com/luizalabs/juggernaut.git && cd juggernaut
 ```
 
 ### Install dependencies
@@ -47,7 +47,7 @@ These are some of patterns definitions to help us to keep a default configuratio
 
 - NPM or Yarn? We chose `npm`, but feel free to make your choice;
 - UI Kit library? Jump into [MaterialUI](https://material-ui.com);
-- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass;
+- Linter: If You don't use [Gandalf Lint](https://github.com/luizalabs/gandalf-lint), you shall not pass;
 - Do you want a component pattern? [Get here](src/containers/Home/index.jsx);
 - [Why Formik?](https://jaredpalmer.com/formik/docs/overview#motivation)
 - [Why Axios?](https://github.com/axios/axios#features)
