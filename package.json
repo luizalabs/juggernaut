@@ -1,5 +1,5 @@
 {
-  "name": "react-app-boilerplate",
+  "name": "juggernaut-boilerplate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,6 +42,10 @@
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
     "jest-styled-components": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
   },
   "author": "Stanley Gomes <stanleygomesdasilva@gmail.com>",
   "contributors": [
