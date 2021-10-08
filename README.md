@@ -19,6 +19,10 @@ Name | Description
 [Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
 [Demo repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut demo source code*
 
+## :pencil: Requirements
+
+This boilerplate supports Node.js from version v14.x
+
 ## :rocket: Startup
 
 Step by step to get this up and running
