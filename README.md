@@ -4,7 +4,7 @@
 
 ## An unstoppable boilerplate
 
-The main goal of **Juggernaut** is to set patterns to be followed by any and every Softbox front-end developer working on React projects.
+The main goal of **Juggernaut** is to set patterns to be followed by any and every Luizalabs front-end developer working on React projects.
 
 <p align="center" style="margin: 0 auto 40px; height: 200px">
 	<img src="src/assets/images/juggernaut.gif" />
