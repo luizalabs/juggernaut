@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Loading should render 1`] = `
-<styled.div>
-  <WithStyles(ForwardRef(CircularProgress)) />
-</styled.div>
-`;
