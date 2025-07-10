@@ -2,8 +2,9 @@ import type { Viewport, Metadata } from 'next';
 import { pixelify, workSans } from '@config/font';
 import '../style/globals.css';
 import { config } from '@config/config';
+import GoogleAnalytics from '@shared/components/GoogleAnalytics';
 
-const { googleSiteVerification } = config;
+const { siteVerification: googleSiteVerification } = config.google;
 
 export const metadata: Metadata = {
   title: 'Noah Template',
@@ -62,6 +63,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${pixelify.variable} ${workSans.variable} antialiased`}>
+        <GoogleAnalytics />
         <div id='app-container'>{children}</div>
       </body>
     </html>
