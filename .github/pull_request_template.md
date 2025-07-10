@@ -6,14 +6,14 @@
 
 Descreva suas alterações detalhadamente, incluindo os arquivos que foram modificados e o impacto dessas mudanças no projeto Next.js.
 
-## 🔗 Issue Relacionada 
+## 🔗 Issue Relacionada
 
 Título da Issue ([#ISSUE_ID](http://github.com/link_for_issue))
 
 ## 🧪 Como testar
 
-  Como você descreveria seu problema para alguém que não conhece você ou seu projeto?
-  Tente escrever uma sequência de passos que qualquer pessoa possa repetir para ver o problema/funcionalidade.
+Como você descreveria seu problema para alguém que não conhece você ou seu projeto?
+Tente escrever uma sequência de passos que qualquer pessoa possa repetir para ver o problema/funcionalidade.
 
 ## 🏷️ Tipo de mudança
 
@@ -31,8 +31,8 @@ Título da Issue ([#ISSUE_ID](http://github.com/link_for_issue))
 
 <!--- Adicione screenshots ou GIFs para mudanças visuais -->
 
-| Antes | Depois |
-|-------|--------|
+| Antes         | Depois         |
+| ------------- | -------------- |
 | ![Antes](url) | ![Depois](url) |
 
 ## ✅ Checklist

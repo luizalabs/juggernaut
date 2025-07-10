@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
 /**
  * Cliente HTTP para realizar requisições REST
@@ -20,14 +20,14 @@ export class HttpClient {
    * @returns Headers com token de autorização e content-type
    */
   private getAuthHeaders(): Record<string, string> {
-    const token = "Your logic here";
+    const token = 'Your logic here';
     const headers: Record<string, string> = {};
 
     if (token) {
-      headers["Authorization"] = `Bearer ${token}`;
+      headers['Authorization'] = `Bearer ${token}`;
     }
 
-    headers["Content-Type"] = 'application/json'
+    headers['Content-Type'] = 'application/json';
 
     return headers;
   }

@@ -1,5 +1,5 @@
-import { formatDistanceToNow, format } from "date-fns";
-import { ptBR } from "date-fns/locale";
+import { formatDistanceToNow, format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 
 export class DateUtils {
   /**
@@ -20,7 +20,7 @@ export class DateUtils {
    * @param pattern Padrão de formatação (padrão: "dd/MM/yyyy")
    * @returns String formatada
    */
-  static formatDate(date: Date, pattern = "dd/MM/yyyy"): string {
+  static formatDate(date: Date, pattern = 'dd/MM/yyyy'): string {
     return format(date, pattern, { locale: ptBR });
   }
 

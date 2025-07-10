@@ -9,8 +9,8 @@ interface Config {
 
 export const config: Config = {
   api: {
-    baseUrl: process.env.NEXT_PUBLIC_API_URL || "",
+    baseUrl: process.env.NEXT_PUBLIC_API_URL || '',
   },
   googleSiteVerification:
-    process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+    process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
 };

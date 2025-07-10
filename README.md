@@ -36,11 +36,11 @@ Acesse [http://localhost:3000](http://localhost:3000) para visualizar a aplicaç
 
 ### 🛠️ Scripts Disponíveis
 
-| Script | Comando | Descrição |
-|--------|---------|-----------|
-| **Desenvolvimento** | `npm run dev` | Inicia o servidor de desenvolvimento com hot reload |
-| **Build** | `npm run build` | Gera build otimizado para produção |
-| **Produção** | `npm run start` | Inicia servidor de produção (requer build) |
+| Script              | Comando         | Descrição                                           |
+| ------------------- | --------------- | --------------------------------------------------- |
+| **Desenvolvimento** | `npm run dev`   | Inicia o servidor de desenvolvimento com hot reload |
+| **Build**           | `npm run build` | Gera build otimizado para produção                  |
+| **Produção**        | `npm run start` | Inicia servidor de produção (requer build)          |
 
 ### 🔐 Variáveis de Ambiente e Configurações Sensíveis
 
@@ -89,20 +89,24 @@ src/
 ### 🎯 Princípios Arquiteturais
 
 #### **1. Separação por Funcionalidade**
+
 - Cada `feature` contém tudo relacionado a uma funcionalidade específica
 - Facilita manutenção e escalabilidade
 - Reduz acoplamento entre diferentes partes da aplicação
 
 #### **2. Colocation**
+
 - Componentes, hooks e serviços ficam próximos ao seu uso
 - Melhora a experiência do desenvolvedor
 - Facilita refatoração e exclusão de código
 
 #### **3. Shared vs Feature**
+
 - **Shared**: Usado por múltiplas features
 - **Feature**: Específico de uma funcionalidade
 
 #### **4. TypeScript First**
+
 - Tipagem forte em toda a aplicação
 - Interfaces bem definidas
 - Melhor experiência de desenvolvimento

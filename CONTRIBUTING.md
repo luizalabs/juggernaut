@@ -1,4 +1,3 @@
-
 # 🤝 Como contribuir
 
 Suas contribuições são muito bem-vindas! Se você tem uma ideia de melhoria, correção de bug ou nova funcionalidade, sinta-se à vontade para abrir uma issue ou pull request. Colaboração e novas perspectivas são altamente valorizadas aqui—vamos construir algo incrível juntos!
@@ -54,17 +53,17 @@ nacionalidade, aparência pessoal e religião.
 Exemplos de comportamentos que contribuem para criar um ambiente positivo
 incluem:
 
-* Ser respeitoso com diferentes pontos de vista e experiências
-* Aceitar críticas construtivas com elegância
-* Focar no que é melhor para a comunidade
+- Ser respeitoso com diferentes pontos de vista e experiências
+- Aceitar críticas construtivas com elegância
+- Focar no que é melhor para a comunidade
 
 Exemplos de comportamentos inaceitáveis por participantes incluem:
 
-* O uso de linguagem ou imagens sexualizadas
-* Comentários insultuosos/depreciativos e ataques pessoais ou políticos
-* Publicar informações privadas de outros, como endereço físico ou eletrônico, sem permissão explícita
-* Código patenteado de terceiros
-* Outras condutas que poderiam ser razoavelmente consideradas inadequadas em um ambiente profissional
+- O uso de linguagem ou imagens sexualizadas
+- Comentários insultuosos/depreciativos e ataques pessoais ou políticos
+- Publicar informações privadas de outros, como endereço físico ou eletrônico, sem permissão explícita
+- Código patenteado de terceiros
+- Outras condutas que poderiam ser razoavelmente consideradas inadequadas em um ambiente profissional
 
 ### 🛡️ Nossas Responsabilidades
 
