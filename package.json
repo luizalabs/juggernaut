@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
@@ -16,6 +17,7 @@
     "test:coverage": "jest --coverage",
     "test:ci": "jest --coverage --ci --watchAll=false",
     "ci:check": "npm run format:check && npm run lint && npm run test:ci && npm run build",
+    "deploy": "npm run ci:check && firebase deploy",
     "release": "standard-version && git push --follow-tags origin $(git rev-parse --abbrev-ref HEAD)",
     "prepare": "husky"
   },
@@ -55,6 +57,7 @@
     "eslint-config-next": "15.3.2",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.5.1",
+    "firebase-tools": "^14.10.0",
     "husky": "^9.1.7",
     "jest": "^30.0.4",
     "jest-environment-jsdom": "^30.0.4",
