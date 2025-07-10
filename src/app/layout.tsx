@@ -1,9 +1,9 @@
 import type { Viewport, Metadata } from 'next';
 import { pixelify, workSans } from '@config/font';
 import '../style/globals.css';
+import { config } from '@config/config';
 
-const googleSiteVerification =
-  process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '';
+const { googleSiteVerification } = config;
 
 export const metadata: Metadata = {
   title: 'Noah Template',
