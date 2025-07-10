@@ -198,6 +198,27 @@ Executa ESLint e Prettier em arquivos JS/TS e apenas Prettier em JSON, CSS e Mar
 git commit --no-verify
 ```
 
+# 🎨 Boas Práticas - Tailwind CSS
+
+## 📋 Configuração
+- `tailwind.config.js` - Configuração principal e pastas monitoradas
+- `src/style/globals.css` - Estilos globais e diretivas
+
+## 🚀 Principais Práticas
+
+1. **Ordem de Classes**: Layout → Dimensões → Espaçamento → Tipografia → Cores → Bordas → Efeitos → Responsividade → Estados
+2. **Mobile-First**: `text-sm md:text-base lg:text-lg` em vez de desktop-first
+3. **Organização**: Agrupe classes por função para melhor legibilidade
+4. **Componentes Reutilizáveis**: Extraia patterns repetidos em componentes com variants
+5. **Dark Mode**: Use `dark:` prefix para temas escuros (`bg-white dark:bg-gray-900`)
+6. **Helper cn()**: Combine classes condicionais com `clsx` + `tailwind-merge`
+7. **Evite**: Classes conflitantes (`p-4 p-6`), valores arbitrários desnecessários, classes não utilizadas
+
+## 🔧 Ferramentas
+- **VS Code**: Tailwind CSS IntelliSense, Headwind
+- **Prettier**: prettier-plugin-tailwindcss (já configurado)
+- **Configuração**: JIT mode + purge CSS otimizado para performance
+
 ## 🤝 Como contribuir
 
 Suas contribuições são muito bem-vindas! Para colaborar com o projeto de forma eficiente e seguindo nossas diretrizes, consulte o guia completo no [CONTRIBUTING.md](CONTRIBUTING.md). Lá você encontrará um passo a passo detalhado, padrões de commit, regras de validação e dicas importantes para garantir que sua contribuição seja aceita rapidamente.
