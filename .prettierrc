@@ -12,5 +12,9 @@
   "quoteProps": "as-needed",
   "jsxSingleQuote": true,
   "proseWrap": "preserve",
-  "htmlWhitespaceSensitivity": "css"
+  "htmlWhitespaceSensitivity": "css",
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ],
+  "tailwindConfig": "./tailwind.config.js"
 }

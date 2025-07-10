@@ -4,10 +4,13 @@ export const pixelify = Pixelify_Sans({
   variable: '--font-pixelify-sans',
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  fallback: ['Courier New', 'monospace'],
 });
 
 export const workSans = Work_Sans({
   variable: '--font-work-sans',
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
+  display: 'swap',
 });
