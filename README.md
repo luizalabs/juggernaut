@@ -16,68 +16,6 @@ O template Next.js moderno e opinativo para iniciar projetos rapidamente, seguin
 - **Containers**: Podman e Podman Compose
 - **Node.js**: >= 22.x
 
-## 🚦 Como Executar o projeto
-
-### ⚡ Instalação e Execução
-
-```bash
-# Clone o repositório
-git clone <url-do-repositorio>
-cd noah-template
-
-# Instale as dependências
-npm install
-
-# Execute em modo de desenvolvimento
-npm run dev
-```
-
-Acesse [http://localhost:3000](http://localhost:3000) para visualizar a aplicação.
-
-### 🛠️ Scripts Disponíveis
-
-| Script              | Comando         | Descrição                                           |
-| ------------------- | --------------- | --------------------------------------------------- |
-| **Desenvolvimento** | `npm run dev`   | Inicia o servidor de desenvolvimento com hot reload |
-| **Build**           | `npm run build` | Gera build otimizado para produção                  |
-| **Produção**        | `npm run start` | Inicia servidor de produção (requer build)          |
-
-## 🎨 Qualidade de Código
-
-Este projeto utiliza **ESLint** e **Prettier** para garantir qualidade e consistência do código.
-
-### 📋 Configurações
-
-As regras e definições aplicadas estão nos arquivos abaixo.
-
-| Ferramenta | Arquivo de Configuração | Descrição                                    |
-| ---------- | ----------------------- | -------------------------------------------- |
-| ESLint     | `eslint.config.mjs`     | Regras de linting e integração com Prettier |
-| Prettier   | `.prettierrc`           | Regras de formatação de código               |
-| VS Code    | `.vscode/settings.json` | Configurações do editor                      |
-
-### 🚀 Scripts de Qualidade
-
-| Script                | Comando               | Descrição                                  |
-| --------------------- | --------------------- | ------------------------------------------ |
-| **Linting**           | `npm run lint`        | Verifica problemas de código com ESLint   |
-| **Correção de Lint**  | `npm run lint:fix`    | Corrige automaticamente problemas ESLint  |
-| **Formatação**        | `npm run format`      | Formata código com Prettier               |
-| **Verificar Format.** | `npm run format:check`| Verifica formatação sem alterar arquivos  |
-| **Verificação**       | `npm run check`       | Verifica formatação + lint (CI/CD)        |
-
-> **💡 Dica**: Instale as extensões `ESLint` e `Prettier - Code formatter` no VS Code para melhor experiência de desenvolvimento.
-
-### 🔐 Variáveis de Ambiente e Configurações Sensíveis
-
-As variáveis necessárias estão no arquivo `.env.template`. Exemplo:
-
-```
-NEXT_PUBLIC_API_URL=http://localhost:3000/api
-```
-
-*Nunca faça commit de arquivos com dados sensíveis! Use sempre variáveis de ambiente ou arquivos ignorados pelo Git.*
-
 ## 🏗️ Arquitetura da Aplicação
 
 Este template segue a **Feature-Based Architecture**
@@ -161,6 +99,103 @@ export function Component({ prop }: ComponentProps) {
 }
 
 export default Component;
+```
+
+## 🚦 Como Executar o projeto
+
+### ⚡ Instalação e Execução
+
+```bash
+# Clone o repositório
+git clone <url-do-repositorio>
+cd noah-template
+
+# Instale as dependências
+npm install
+
+# Execute em modo de desenvolvimento
+npm run dev
+```
+
+Acesse [http://localhost:3000](http://localhost:3000) para visualizar a aplicação.
+
+### 🛠️ Scripts Disponíveis
+
+| Script              | Comando         | Descrição                                           |
+| ------------------- | --------------- | --------------------------------------------------- |
+| **Desenvolvimento** | `npm run dev`   | Inicia o servidor de desenvolvimento com hot reload |
+| **Build**           | `npm run build` | Gera build otimizado para produção                  |
+| **Produção**        | `npm run start` | Inicia servidor de produção (requer build)          |
+
+### 🔐 Variáveis de Ambiente e Configurações Sensíveis
+
+As variáveis necessárias estão no arquivo `.env.template`. Exemplo:
+
+```
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+```
+
+*Nunca faça commit de arquivos com dados sensíveis! Use sempre variáveis de ambiente ou arquivos ignorados pelo Git.*
+
+## 🎨 Qualidade de Código
+
+Este projeto utiliza **ESLint** e **Prettier** para garantir qualidade e consistência do código.
+
+### 📋 Configurações
+
+As regras e definições aplicadas estão nos arquivos abaixo.
+
+| Ferramenta | Arquivo de Configuração | Descrição                                    |
+| ---------- | ----------------------- | -------------------------------------------- |
+| ESLint     | `eslint.config.mjs`     | Regras de linting e integração com Prettier |
+| Prettier   | `.prettierrc`           | Regras de formatação de código               |
+| VS Code    | `.vscode/settings.json` | Configurações do editor                      |
+
+### 🚀 Scripts de Qualidade
+
+| Script                | Comando               | Descrição                                  |
+| --------------------- | --------------------- | ------------------------------------------ |
+| **Linting**           | `npm run lint`        | Verifica problemas de código com ESLint   |
+| **Correção de Lint**  | `npm run lint:fix`    | Corrige automaticamente problemas ESLint  |
+| **Formatação**        | `npm run format`      | Formata código com Prettier               |
+| **Verificar Format.** | `npm run format:check`| Verifica formatação sem alterar arquivos  |
+| **Verificação**       | `npm run check`       | Verifica formatação + lint (CI/CD)        |
+
+> **💡 Dica**: Instale as extensões `ESLint` e `Prettier - Code formatter` no VS Code para melhor experiência de desenvolvimento.
+
+## 🔒 Git Hooks e Automação (Husky)
+
+Este projeto utiliza **Husky** para automatizar verificações de qualidade antes dos commits e pushes.
+
+### 📋 Configuração Atual
+
+**Pre-commit Hook**: Executa `lint-staged` para formatar e corrigir automaticamente apenas os arquivos modificados com Prettier e ESLint.
+
+**Pre-push Hook**: Executa formatação, lint, build e protege a branch `main` antes do push.
+
+**Commit-msg Hook**: Valida se a mensagem de commit segue o padrão Conventional Commits usando `.husky/commit-msg`.
+
+### 🔧 Lint-staged
+
+Executa ESLint e Prettier em arquivos JS/TS e apenas Prettier em JSON, CSS e Markdown antes do commit.
+
+### 🎯 Benefícios
+
+- **Qualidade Garantida**: Código sempre formatado e sem erros
+- **Automação**: Verificações automáticas sem intervenção manual  
+- **Proteção**: Evita commits problemáticos no repositório
+
+### 📝 Tipos Válidos de Commit
+
+`feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `perf`, `ci`, `build`, `revert`
+
+**Exemplo**: `feat: add user authentication`
+
+### 🚨 Bypass de Emergência
+
+```bash
+# Bypass hooks (use apenas em emergências)
+git commit --no-verify
 ```
 
 ## 🤝 Como contribuir
