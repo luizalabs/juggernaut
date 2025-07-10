@@ -1,38 +1,42 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: 🐛 Relatório de Bug
+about: Crie um relatório para nos ajudar a melhorar
 title: ''
-labels: ''
+labels: 'bug'
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## 🐛 Descreva o bug
+Uma descrição clara e concisa do que é o bug.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+## 🔄 Como reproduzir
+Passos para reproduzir o comportamento:
+1. Vá para '...'
+2. Clique em '....'
+3. Role para baixo até '....'
+4. Veja o erro
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## ✅ Comportamento esperado
+Uma descrição clara e concisa do que você esperava que acontecesse.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## 📱 Informações do dispositivo móvel (se aplicável):**
+ - Dispositivo: [ex: iPhone6]
+ - OS: [ex: iOS8.1]
+ - Navegador [ex: navegador padrão, safari]
+ - Versão [ex: 22]
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+## 🖥️ Informações do desktop (se aplicável):**
+ - OS: [ex: Windows, macOS, Linux]
+ - Navegador [ex: chrome, safari, firefox]
+ - Versão [ex: 22]
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+## 📸 Screenshots
+Se aplicável, adicione screenshots para ajudar a explicar seu problema.
 
-**Additional context**
-Add any other context about the problem here.
+## 🔧 Informações adicionais do ambiente
+- Versão do Node.js: [ex: 18.0.0]
+- Versão do npm: [ex: 8.0.0]
+
+## 📝 Contexto adicional
+Adicione qualquer outro contexto sobre o problema aqui.
