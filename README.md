@@ -42,6 +42,32 @@ Acesse [http://localhost:3000](http://localhost:3000) para visualizar a aplicaç
 | **Build**           | `npm run build` | Gera build otimizado para produção                  |
 | **Produção**        | `npm run start` | Inicia servidor de produção (requer build)          |
 
+## 🎨 Qualidade de Código
+
+Este projeto utiliza **ESLint** e **Prettier** para garantir qualidade e consistência do código.
+
+### 📋 Configurações
+
+As regras e definições aplicadas estão nos arquivos abaixo.
+
+| Ferramenta | Arquivo de Configuração | Descrição                                    |
+| ---------- | ----------------------- | -------------------------------------------- |
+| ESLint     | `eslint.config.mjs`     | Regras de linting e integração com Prettier |
+| Prettier   | `.prettierrc`           | Regras de formatação de código               |
+| VS Code    | `.vscode/settings.json` | Configurações do editor                      |
+
+### 🚀 Scripts de Qualidade
+
+| Script                | Comando               | Descrição                                  |
+| --------------------- | --------------------- | ------------------------------------------ |
+| **Linting**           | `npm run lint`        | Verifica problemas de código com ESLint   |
+| **Correção de Lint**  | `npm run lint:fix`    | Corrige automaticamente problemas ESLint  |
+| **Formatação**        | `npm run format`      | Formata código com Prettier               |
+| **Verificar Format.** | `npm run format:check`| Verifica formatação sem alterar arquivos  |
+| **Verificação**       | `npm run check`       | Verifica formatação + lint (CI/CD)        |
+
+> **💡 Dica**: Instale as extensões `ESLint` e `Prettier - Code formatter` no VS Code para melhor experiência de desenvolvimento.
+
 ### 🔐 Variáveis de Ambiente e Configurações Sensíveis
 
 As variáveis necessárias estão no arquivo `.env.template`. Exemplo:
