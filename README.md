@@ -2,12 +2,55 @@
 
 O template Next.js moderno e opinativo para iniciar projetos rapidamente, seguindo as melhores práticas do mercado.
 
+<div align="center">
+  <img src="public/images/logo-banner.png" alt="Logo" />
+</div>
+
 ## ⚡ Stack Tecnológica
 
 - **Framework**: Next.js (App Router)
 - **Linguagem**: TypeScript
 - **Estilização**: Tailwind CSS
 - **Arquitetura**: Feature-Based Architecture
+- **Arquitetura**: Feature-Based Architecture
+- **Containers**: Podman e Podman Compose
+- **Node.js**: >= 22.x
+
+## 🚦 Como Executar o projeto
+
+### ⚡ Instalação e Execução
+
+```bash
+# Clone o repositório
+git clone <url-do-repositorio>
+cd noah-template
+
+# Instale as dependências
+npm install
+
+# Execute em modo de desenvolvimento
+npm run dev
+```
+
+Acesse [http://localhost:3000](http://localhost:3000) para visualizar a aplicação.
+
+### 🛠️ Scripts Disponíveis
+
+| Script | Comando | Descrição |
+|--------|---------|-----------|
+| **Desenvolvimento** | `npm run dev` | Inicia o servidor de desenvolvimento com hot reload |
+| **Build** | `npm run build` | Gera build otimizado para produção |
+| **Produção** | `npm run start` | Inicia servidor de produção (requer build) |
+
+### 🔐 Variáveis de Ambiente e Configurações Sensíveis
+
+As variáveis necessárias estão no arquivo `.env.template`. Exemplo:
+
+```
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+```
+
+*Nunca faça commit de arquivos com dados sensíveis! Use sempre variáveis de ambiente ou arquivos ignorados pelo Git.*
 
 ## 🏗️ Arquitetura da Aplicação
 
