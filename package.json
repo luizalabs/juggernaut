@@ -1,7 +1,8 @@
 {
   "name": "noah-template",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "scripts": {
+    "release": "standard-version && git push --follow-tags origin $(git rev-parse --abbrev-ref HEAD)"
   },
   "browserslist": [
     ">0.2%",
