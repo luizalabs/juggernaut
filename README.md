@@ -197,6 +197,35 @@ Executa ESLint e Prettier em arquivos JS/TS e apenas Prettier em JSON, CSS e Mar
 # Bypass hooks (use apenas em emergências)
 git commit --no-verify
 ```
+## 🧪 Guia de Testes - Jest + React Testing Library
+
+### 📊 Configuração
+- **Framework**: Jest + React Testing Library + @testing-library/jest-dom
+- **Cobertura**: c8 com threshold de 80%
+- **Estrutura**: Arquivos `__tests__/` ao lado dos componentes
+
+### 🔧 Scripts Disponíveis
+```bash
+npm test              # Executar todos os testes
+npm run test:watch    # Modo watch para desenvolvimento
+npm run test:coverage # Testes com cobertura (80% threshold)
+npm run test:ci       # Testes para CI/CD
+```
+
+### 🚀 Exemplo Básico
+```tsx
+import { render, screen, fireEvent } from '@shared/utils/test-utils'
+
+describe('MyComponent', () => {
+  it('should render and handle clicks', () => {
+    const mockClick = jest.fn()
+    render(<MyComponent onClick={mockClick} />)
+    
+    fireEvent.click(screen.getByRole('button'))
+    expect(mockClick).toHaveBeenCalled()
+  })
+})
+```
 
 # 🎨 Boas Práticas - Tailwind CSS
 
