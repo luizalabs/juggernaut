@@ -1,16 +1,16 @@
-const konstaConfig = require('konsta/config');
-
-module.exports = konstaConfig({
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './src/app/**/*.{js,ts,jsx,tsx}',
+    './src/features/**/*.{js,ts,jsx,tsx}',
   ],
   darkMode: 'media',
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'work-sans': ['var(--font-work-sans)', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-});
+};
