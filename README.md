@@ -129,7 +129,7 @@ Acesse [http://localhost:3000](http://localhost:3000) para visualizar a aplicaç
 
 ### 🔐 Variáveis de Ambiente e Configurações Sensíveis
 
-As variáveis necessárias estão no arquivo `.env.template`. Exemplo:
+As variáveis necessárias estão no arquivo `.env.example`. Exemplo:
 
 ```
 NEXT_PUBLIC_API_URL=http://localhost:3000/api
@@ -218,6 +218,34 @@ git commit --no-verify
 - **VS Code**: Tailwind CSS IntelliSense, Headwind
 - **Prettier**: prettier-plugin-tailwindcss (já configurado)
 - **Configuração**: JIT mode + purge CSS otimizado para performance
+
+## 📊 Google Analytics - Guia de Configuração
+
+### 🔧 Configuração
+1. Adicione no `.env.local`: `NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX`
+2. Estrutura: `src/lib/gtag.ts`, `src/shared/components/GoogleAnalytics.tsx`, `src/shared/hooks/useGoogleAnalytics.ts`
+
+### 🚀 Como Usar
+```tsx
+import { useGoogleAnalytics } from '@shared/hooks/useGoogleAnalytics';
+
+const { trackEvent, trackButtonClick, trackError, isEnabled } = useGoogleAnalytics();
+
+// Rastrear cliques
+trackButtonClick('hero-button');
+
+// Eventos customizados
+trackEvent({ action: 'download', category: 'file', label: 'template.pdf' });
+
+// Rastrear erros
+trackError('Failed to load data', 'HomePage');
+```
+
+## 📋 Recursos
+- ✅ **Page Views**: Rastreamento automático de mudanças de rota
+- ✅ **Hook personalizado**: `useGoogleAnalytics()` para eventos
+- ✅ **Compatível**: Next.js App Router e client-side routing
+- ✅ **Privacidade**: Configuração LGPD ready com anonimização de IP
 
 ## 🤝 Como contribuir
 
