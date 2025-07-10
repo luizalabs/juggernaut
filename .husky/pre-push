@@ -1,0 +1,36 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+protected_branch='master'
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+if [ "$current_branch" = "$protected_branch" ]; then
+    echo "🚫 Direct push to $protected_branch is not allowed."
+    echo "Please create a pull request instead."
+    exit 1
+fi
+
+echo "🔍 Running pre-push checks..."
+
+npm run format:check
+if [ $? -ne 0 ]; then
+    echo "❌ Code formatting check failed!"
+    echo "Run 'npm run format' to fix formatting issues."
+    exit 1
+fi
+
+npm run lint
+if [ $? -ne 0 ]; then
+    echo "❌ Linting check failed!"
+    echo "Run 'npm run lint:fix' to fix linting issues."
+    exit 1
+fi
+
+npm run build
+if [ $? -ne 0 ]; then
+    echo "❌ Build check failed!"
+    echo "Please fix build errors before pushing."
+    exit 1
+fi
+
+echo "✅ All pre-push checks passed!"
