@@ -15,6 +15,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:ci": "jest --coverage --ci --watchAll=false",
+    "ci:check": "npm run format:check && npm run lint && npm run test:ci && npm run build",
     "release": "standard-version && git push --follow-tags origin $(git rev-parse --abbrev-ref HEAD)",
     "prepare": "husky"
   },
@@ -37,6 +38,8 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.6.3",
