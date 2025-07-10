@@ -7,6 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run format:check && npm run lint",
     "release": "standard-version && git push --follow-tags origin $(git rev-parse --abbrev-ref HEAD)"
   },
   "browserslist": [
@@ -26,15 +30,18 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/next-pwa": "^5.6.9",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
-    "tailwindcss": "^4",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "prettier": "^3.6.2",
     "standard-version": "^9.5.0",
+    "tailwindcss": "^4",
     "typescript": "^5"
   },
   "engines": {
