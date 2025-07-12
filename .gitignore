@@ -26,3 +26,9 @@ Thumbs.db
 
 # Tests
 coverage
+
+# Log
+*.log
+
+# Firebase
+.firebase

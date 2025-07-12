@@ -3,7 +3,7 @@
 O template Next.js moderno e opinativo para iniciar projetos rapidamente, seguindo as melhores práticas do mercado.
 
 <div align="center">
-  <img src="public/images/logo-banner.png" alt="Logo" />
+  <img src="public/images/banner.png" alt="Logo" />
 </div>
 
 ## ⚡ Stack Tecnológica
