@@ -69,15 +69,6 @@
   "engines": {
     "node": ">=22"
   },
-  "author": "Stanley Gomes <stanleygomesdasilva@gmail.com>",
-  "contributors": [
-    "Lucas Vilaboim <lucas@vilaboim.com> (https://vilaboim.com)",
-    "Marcony Neves <marconyneves@gmail.com>",
-    "Marlon Maxwel <marlonmleite@gmail.com>",
-    "Rafael Alves <rafael.alvessilva1995@gmail.com",
-    "Rafael Ribeiro <faelribeirodesousa@gmail.com>",
-    "Paulo Junior <paulojunioromao@gmail.com>"
-  ],
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
