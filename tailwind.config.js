@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'work-sans': ['var(--font-work-sans)', 'sans-serif'],
+        pixelify: ['var(--font-pixelify-sans)', 'monospace'],
       },
 
       /*
