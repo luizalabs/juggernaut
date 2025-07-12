@@ -1,111 +1,109 @@
-// import { renderHook, act } from '@testing-library/react'
-// import { useGoogleAnalytics } from '../useGoogleAnalytics'
+import { renderHook, act } from '@testing-library/react';
+import { useGoogleAnalytics } from '../useGoogleAnalytics';
+import * as gtag from '@lib/gtag';
 
-// // Mock the gtag module
-// jest.mock('@lib/gtag', () => ({
-//   event: jest.fn(),
-//   isGAEnabled: jest.fn(),
-// }))
+// Mock the gtag module
+jest.mock('@lib/gtag', () => ({
+  event: jest.fn(),
+  isGAEnabled: jest.fn(() => true),
+}));
 
-// describe('useGoogleAnalytics', () => {
-//   beforeEach(() => {
-//     jest.clearAllMocks()
-//   })
+const mockEvent = gtag.event as jest.MockedFunction<typeof gtag.event>;
+const mockIsGAEnabled = gtag.isGAEnabled as jest.MockedFunction<
+  typeof gtag.isGAEnabled
+>;
 
-//   it('should return analytics functions', () => {
-//     const { result } = renderHook(() => useGoogleAnalytics())
+describe('useGoogleAnalytics', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+    mockIsGAEnabled.mockReturnValue(true);
+  });
 
-//     expect(result.current).toHaveProperty('trackEvent')
-//     expect(result.current).toHaveProperty('trackButtonClick')
-//     expect(result.current).toHaveProperty('trackPageView')
-//     expect(result.current).toHaveProperty('trackError')
-//     expect(result.current).toHaveProperty('isEnabled')
-//   })
+  it('should return analytics functions', () => {
+    const { result } = renderHook(() => useGoogleAnalytics());
 
-//   it('should track button click events', () => {
-//     const { event } = require('@lib/gtag')
-//     const { result } = renderHook(() => useGoogleAnalytics())
+    expect(result.current).toHaveProperty('trackEvent');
+    expect(result.current).toHaveProperty('trackButtonClick');
+    expect(result.current).toHaveProperty('trackPageView');
+    expect(result.current).toHaveProperty('trackError');
+    expect(result.current).toHaveProperty('isEnabled');
+  });
 
-//     act(() => {
-//       result.current.trackButtonClick('test-button')
-//     })
+  it('should track button click events', () => {
+    const { result } = renderHook(() => useGoogleAnalytics());
 
-//     expect(event).toHaveBeenCalledWith({
-//       action: 'click',
-//       category: 'button',
-//       label: 'test-button',
-//     })
-//   })
+    act(() => {
+      result.current.trackButtonClick('test-button');
+    });
 
-//   it('should track custom events', () => {
-//     const { event } = require('@lib/gtag')
-//     const { result } = renderHook(() => useGoogleAnalytics())
+    expect(mockEvent).toHaveBeenCalledWith({
+      action: 'click',
+      category: 'button',
+      label: 'test-button',
+    });
+  });
 
-//     const customEvent = {
-//       action: 'download',
-//       category: 'file',
-//       label: 'template.pdf',
-//       value: 1,
-//     }
+  it('should track custom events', () => {
+    const { result } = renderHook(() => useGoogleAnalytics());
 
-//     act(() => {
-//       result.current.trackEvent(customEvent)
-//     })
+    const customEvent = {
+      action: 'download',
+      category: 'file',
+      label: 'template.pdf',
+      value: 1,
+    };
 
-//     expect(event).toHaveBeenCalledWith(customEvent)
-//   })
+    act(() => {
+      result.current.trackEvent(customEvent);
+    });
 
-//   it('should track page views', () => {
-//     const { event } = require('@lib/gtag')
-//     const { result } = renderHook(() => useGoogleAnalytics())
+    expect(mockEvent).toHaveBeenCalledWith(customEvent);
+  });
 
-//     act(() => {
-//       result.current.trackPageView('home-page')
-//     })
+  it('should track page views', () => {
+    const { result } = renderHook(() => useGoogleAnalytics());
 
-//     expect(event).toHaveBeenCalledWith({
-//       action: 'page_view',
-//       category: 'navigation',
-//       label: 'home-page',
-//     })
-//   })
+    act(() => {
+      result.current.trackPageView('home-page');
+    });
 
-//   it('should track errors', () => {
-//     const { event } = require('@lib/gtag')
-//     const { result } = renderHook(() => useGoogleAnalytics())
+    expect(mockEvent).toHaveBeenCalledWith({
+      action: 'page_view',
+      category: 'navigation',
+      label: 'home-page',
+    });
+  });
 
-//     act(() => {
-//       result.current.trackError('Test error', 'TestComponent')
-//     })
+  it('should track errors', () => {
+    const { result } = renderHook(() => useGoogleAnalytics());
 
-//     expect(event).toHaveBeenCalledWith({
-//       action: 'error',
-//       category: 'exception',
-//       label: 'TestComponent: Test error',
-//     })
-//   })
+    act(() => {
+      result.current.trackError('Test error', 'TestComponent');
+    });
 
-//   it('should track errors without page context', () => {
-//     const { event } = require('@lib/gtag')
-//     const { result } = renderHook(() => useGoogleAnalytics())
+    expect(mockEvent).toHaveBeenCalledWith({
+      action: 'error',
+      category: 'exception',
+      label: 'TestComponent: Test error',
+    });
+  });
 
-//     act(() => {
-//       result.current.trackError('Test error')
-//     })
+  it('should track errors without page context', () => {
+    const { result } = renderHook(() => useGoogleAnalytics());
 
-//     expect(event).toHaveBeenCalledWith({
-//       action: 'error',
-//       category: 'exception',
-//       label: 'Test error',
-//     })
-//   })
+    act(() => {
+      result.current.trackError('Test error');
+    });
 
-//   it('should return correct enabled status', () => {
-//     const { isGAEnabled } = require('@lib/gtag')
-//     isGAEnabled.mockReturnValue(true)
+    expect(mockEvent).toHaveBeenCalledWith({
+      action: 'error',
+      category: 'exception',
+      label: 'Test error',
+    });
+  });
 
-//     const { result } = renderHook(() => useGoogleAnalytics())
-
-//     expect(result.current.isEnabled).toBe(true)
-//   })
-// })
+  it('should return correct enabled status', () => {
+    const { result } = renderHook(() => useGoogleAnalytics());
+    expect(result.current.isEnabled).toBe(true);
+  });
+});

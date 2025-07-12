@@ -17,6 +17,17 @@ const eslintConfig = [
       '@typescript-eslint/no-explicit-any': 'off',
     },
   },
+  {
+    files: [
+      'jest.config.js',
+      '**/*.test.{js,ts,tsx}',
+      '**/__tests__/**/*.{js,ts,tsx}',
+    ],
+    rules: {
+      '@typescript-eslint/no-require-imports': 'off',
+      '@typescript-eslint/ban-ts-comment': 'off',
+    },
+  },
 ];
 
 export default eslintConfig;
