@@ -1,98 +1,285 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7cdc05a8-9023-4af3-8f04-4b8b63ec51f3/deploy-status)](https://app.netlify.com/sites/juggernaut/deploys)
+# 🚀 Noah Template
 
-# Juggernaut
+O template Next.js moderno e opinativo para iniciar projetos rapidamente, seguindo as melhores práticas do mercado.
 
-## An unstoppable boilerplate
+<div align="center">
+  <img src="public/images/logo-banner.png" alt="Logo" />
+</div>
 
-The main goal of **Juggernaut** is to set patterns to be followed by any and every Luizalabs front-end developer working on React projects.
+## ⚡ Stack Tecnológica
 
-<p align="center">
-	<img src="src/assets/images/juggernaut.gif" width="400px" />
-  <br />
-  Gif by <a href="https://dribbble.com/Reuno" target="_blank">Reuno</a>
-</p>
+- **Framework**: Next.js (App Router)
+- **Linguagem**: TypeScript
+- **Estilização**: Tailwind CSS
+- **Arquitetura**: Feature-Based Architecture
+- **Arquitetura**: Feature-Based Architecture
+- **Containers**: Podman e Podman Compose
+- **Node.js**: >= 22.x
 
-## :computer: Ecosystem
+## 🏗️ Arquitetura da Aplicação
 
-Name | Description
---- | ---
-[Demo](https://juggernaut-demo.web.app/) | *Examples of how to use Juggernaut*
-[Demo repository](https://github.com/SoftboxLab/juggernaut-demo) | *Juggernaut demo source code*
+Este template segue a **Feature-Based Architecture**
 
-## :pencil: Requirements
+### 📁 Estrutura de Pastas
 
-This boilerplate supports Node.js from version v14.x
+Abaixo está a organização recomendada para manter o projeto escalável e bem estruturado:
 
-## :rocket: Startup
-
-Step by step to get this up and running
-
-### Clone repo and go to project folder
-
-```bash
-$ git clone https://github.com/SoftboxLab/juggernaut.git && cd juggernaut
+```
+src/
+├── app/                   # Next.js
+│   ├── globals.css        # Estilos globais
+│   ├── layout.tsx         # Layout raiz da aplicação
+│   └── page.tsx           # Página inicial
+├── features/              # Funcionalidades por domínio
+│   └── home/              # Feature da página inicial
+│       ├── components/    # Componentes específicos
+│       ├── hooks/         # Hooks personalizados
+│       ├── services/      # Lógica de negócio
+│       └── types/         # Tipos TypeScript
+├── shared/                # Código compartilhado
+│   ├── components/        # Componentes reutilizáveis
+│   ├── hooks/             # Hooks globais
+│   ├── services/          # APIs e integrações
+│   ├── types/             # Tipos compartilhados
+│   └── utils/             # Funções utilitárias
+├── config/                # Configurações da aplicação
+│   ├── config.ts          # Variáveis de ambiente
+│   └── font.ts            # Configuração das fontes
+└── lib/                   # Bibliotecas e utilitários externos
+    ├── api.ts             # Cliente HTTP
+    └── validations.ts     # Schemas de validação
 ```
 
-### Install dependencies
+### 🎯 Princípios Arquiteturais
 
-```bash
-$ npm i
+#### **1. Separação por Funcionalidade**
+
+- Cada `feature` contém tudo relacionado a uma funcionalidade específica
+- Facilita manutenção e escalabilidade
+- Reduz acoplamento entre diferentes partes da aplicação
+
+#### **2. Colocation**
+
+- Componentes, hooks e serviços ficam próximos ao seu uso
+- Melhora a experiência do desenvolvedor
+- Facilita refatoração e exclusão de código
+
+#### **3. Shared vs Feature**
+
+- **Shared**: Usado por múltiplas features
+- **Feature**: Específico de uma funcionalidade
+
+#### **4. TypeScript First**
+
+- Tipagem forte em toda a aplicação
+- Interfaces bem definidas
+- Melhor experiência de desenvolvimento
+
+### 📦 Convenções de Nomenclatura
+
+- **Componentes**: PascalCase (`UserProfile.tsx`)
+- **Hooks**: camelCase com prefixo "use" (`useUserData.ts`)
+- **Services**: camelCase (`userService.ts`)
+- **Types**: PascalCase com sufixo "Type" (`UserType.ts`)
+- **Utilitários**: camelCase (`formatDate.ts`)
+- **Diretórios**: kebab-Case (`hello-world/`)
+
+### 🎨 Padrões de Componentes
+
+```tsx
+// Estrutura padrão de um componente
+interface ComponentProps {
+  // Props tipadas
+}
+
+export function Component({ prop }: ComponentProps) {
+  // Hooks
+  // Lógica
+  // Return JSX
+}
+
+export default Component;
 ```
 
-### Start server
+## 🚦 Como Executar o projeto
+
+### ⚡ Instalação e Execução
 
 ```bash
-$ npm run start
+# Clone o repositório
+git clone <url-do-repositorio>
+cd noah-template
+
+# Instale as dependências
+npm install
+
+# Execute em modo de desenvolvimento
+npm run dev
 ```
 
-## :heavy_check_mark: Patterns
+Acesse [http://localhost:3000](http://localhost:3000) para visualizar a aplicação.
 
-These are some of patterns definitions to help us to keep a default configuration and front-end arquitecture.
+### 🛠️ Scripts Disponíveis
 
-- NPM or Yarn? We chose `npm`, but feel free to make your choice;
-- UI Kit library? Jump into [MaterialUI](https://material-ui.com);
-- Linter: If You don't use [Gandalf Lint](https://github.com/SoftboxLab/gandalf-lint), you shall not pass;
-- Do you want a component pattern? [Get here](src/containers/Home/index.jsx);
-- [Why Formik?](https://jaredpalmer.com/formik/docs/overview#motivation)
-- [Why Axios?](https://github.com/axios/axios#features)
-- [Why Material?](https://material-ui.com/blog/material-ui-v4-is-out)
+| Script              | Comando         | Descrição                                           |
+| ------------------- | --------------- | --------------------------------------------------- |
+| **Desenvolvimento** | `npm run dev`   | Inicia o servidor de desenvolvimento com hot reload |
+| **Build**           | `npm run build` | Gera build otimizado para produção                  |
+| **Produção**        | `npm run start` | Inicia servidor de produção (requer build)          |
 
-## :open_file_folder: Project structure
+### 🔐 Variáveis de Ambiente e Configurações Sensíveis
 
-- **src/assets**: Static files (images, fonts and icons);
-- **src/resources**: API and endpoints configurations;
-- **src/components**: Components of React to be shared and reused in the project;
-- **src/common**: Utilities, resources, constants, assets, configurations, i18n and others;
-- **src/containers**: Page components that apply business knowledge and present themselves as pages;
-- **src/routes**: Routes of app to be used by SPA and user navigation;
-- **src/store**: State configuration with Redux;
-- **docs**: Docs configuration.
+As variáveis necessárias estão no arquivo `.env.example`. Exemplo:
 
-## :scroll: License
+```
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+```
 
-The MIT License (MIT)
+*Nunca faça commit de arquivos com dados sensíveis! Use sempre variáveis de ambiente ou arquivos ignorados pelo Git.*
 
-[Copyright (c) Feross Aboukhadijeh](https://github.com/standard/eslint-config-standard)
+## 🎨 Qualidade de Código
 
-[Copyright (c) 2012 Airbnb](https://github.com/airbnb/javascript)
+Este projeto utiliza **ESLint** e **Prettier** para garantir qualidade e consistência do código.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
+### 📋 Configurações
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+As regras e definições aplicadas estão nos arquivos abaixo.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+| Ferramenta | Arquivo de Configuração | Descrição                                    |
+| ---------- | ----------------------- | -------------------------------------------- |
+| ESLint     | `eslint.config.mjs`     | Regras de linting e integração com Prettier |
+| Prettier   | `.prettierrc`           | Regras de formatação de código               |
+| VS Code    | `.vscode/settings.json` | Configurações do editor                      |
 
----
+### 🚀 Scripts de Qualidade
 
-This project licence is also MIT.
+| Script                | Comando               | Descrição                                  |
+| --------------------- | --------------------- | ------------------------------------------ |
+| **Linting**           | `npm run lint`        | Verifica problemas de código com ESLint   |
+| **Correção de Lint**  | `npm run lint:fix`    | Corrige automaticamente problemas ESLint  |
+| **Formatação**        | `npm run format`      | Formata código com Prettier               |
+| **Verificar Format.** | `npm run format:check`| Verifica formatação sem alterar arquivos  |
+| **Verificação**       | `npm run check`       | Verifica formatação + lint (CI/CD)        |
+
+> **💡 Dica**: Instale as extensões `ESLint` e `Prettier - Code formatter` no VS Code para melhor experiência de desenvolvimento.
+
+## 🔒 Git Hooks e Automação (Husky)
+
+Este projeto utiliza **Husky** para automatizar verificações de qualidade antes dos commits e pushes.
+
+### 📋 Configuração Atual
+
+**Pre-commit Hook**: Executa `lint-staged` para formatar e corrigir automaticamente apenas os arquivos modificados com Prettier e ESLint.
+
+**Pre-push Hook**: Executa formatação, lint, build e protege a branch `main` antes do push.
+
+**Commit-msg Hook**: Valida se a mensagem de commit segue o padrão Conventional Commits usando `.husky/commit-msg`.
+
+### 🔧 Lint-staged
+
+Executa ESLint e Prettier em arquivos JS/TS e apenas Prettier em JSON, CSS e Markdown antes do commit.
+
+### 🎯 Benefícios
+
+- **Qualidade Garantida**: Código sempre formatado e sem erros
+- **Automação**: Verificações automáticas sem intervenção manual  
+- **Proteção**: Evita commits problemáticos no repositório
+
+### 📝 Tipos Válidos de Commit
+
+`feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `perf`, `ci`, `build`, `revert`
+
+**Exemplo**: `feat: add user authentication`
+
+### 🚨 Bypass de Emergência
+
+```bash
+# Bypass hooks (use apenas em emergências)
+git commit --no-verify
+```
+## 🧪 Guia de Testes - Jest + React Testing Library
+
+### 📊 Configuração
+- **Framework**: Jest + React Testing Library + @testing-library/jest-dom
+- **Cobertura**: c8 com threshold de 80%
+- **Estrutura**: Arquivos `__tests__/` ao lado dos componentes
+
+### 🔧 Scripts Disponíveis
+```bash
+npm test              # Executar todos os testes
+npm run test:watch    # Modo watch para desenvolvimento
+npm run test:coverage # Testes com cobertura (80% threshold)
+npm run test:ci       # Testes para CI/CD
+```
+
+### 🚀 Exemplo Básico
+```tsx
+import { render, screen, fireEvent } from '@shared/utils/test-utils'
+
+describe('MyComponent', () => {
+  it('should render and handle clicks', () => {
+    const mockClick = jest.fn()
+    render(<MyComponent onClick={mockClick} />)
+    
+    fireEvent.click(screen.getByRole('button'))
+    expect(mockClick).toHaveBeenCalled()
+  })
+})
+```
+
+# 🎨 Boas Práticas - Tailwind CSS
+
+## 📋 Configuração
+- `tailwind.config.js` - Configuração principal e pastas monitoradas
+- `src/style/globals.css` - Estilos globais e diretivas
+
+## 🚀 Principais Práticas
+
+1. **Ordem de Classes**: Layout → Dimensões → Espaçamento → Tipografia → Cores → Bordas → Efeitos → Responsividade → Estados
+2. **Mobile-First**: `text-sm md:text-base lg:text-lg` em vez de desktop-first
+3. **Organização**: Agrupe classes por função para melhor legibilidade
+4. **Componentes Reutilizáveis**: Extraia patterns repetidos em componentes com variants
+5. **Dark Mode**: Use `dark:` prefix para temas escuros (`bg-white dark:bg-gray-900`)
+6. **Helper cn()**: Combine classes condicionais com `clsx` + `tailwind-merge`
+7. **Evite**: Classes conflitantes (`p-4 p-6`), valores arbitrários desnecessários, classes não utilizadas
+
+## 🔧 Ferramentas
+- **VS Code**: Tailwind CSS IntelliSense, Headwind
+- **Prettier**: prettier-plugin-tailwindcss (já configurado)
+- **Configuração**: JIT mode + purge CSS otimizado para performance
+
+## 📊 Google Analytics - Guia de Configuração
+
+### 🔧 Configuração
+1. Adicione no `.env.local`: `NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX`
+2. Estrutura: `src/lib/gtag.ts`, `src/shared/components/GoogleAnalytics.tsx`, `src/shared/hooks/useGoogleAnalytics.ts`
+
+### 🚀 Como Usar
+```tsx
+import { useGoogleAnalytics } from '@shared/hooks/useGoogleAnalytics';
+
+const { trackEvent, trackButtonClick, trackError, isEnabled } = useGoogleAnalytics();
+
+// Rastrear cliques
+trackButtonClick('hero-button');
+
+// Eventos customizados
+trackEvent({ action: 'download', category: 'file', label: 'template.pdf' });
+
+// Rastrear erros
+trackError('Failed to load data', 'HomePage');
+```
+
+## 📋 Recursos
+- ✅ **Page Views**: Rastreamento automático de mudanças de rota
+- ✅ **Hook personalizado**: `useGoogleAnalytics()` para eventos
+- ✅ **Compatível**: Next.js App Router e client-side routing
+- ✅ **Privacidade**: Configuração LGPD ready com anonimização de IP
+
+## 🤝 Como contribuir
+
+Suas contribuições são muito bem-vindas! Para colaborar com o projeto de forma eficiente e seguindo nossas diretrizes, consulte o guia completo no [CONTRIBUTING.md](CONTRIBUTING.md). Lá você encontrará um passo a passo detalhado, padrões de commit, regras de validação e dicas importantes para garantir que sua contribuição seja aceita rapidamente.
+
+## 📜 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.

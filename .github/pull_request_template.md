@@ -1,33 +1,41 @@
-# PR Details
-<!--- Provide a general summary of your changes in the Title above -->
+# 🚀 Pull Request Details
 
-## Description
+> 📋 **Antes de abrir este PR**, certifique-se de ter lido as [regras de contribuição](../CONTRIBUTING.md) para garantir que seu Pull Request siga nossos padrões e seja aceito rapidamente.
 
-<!--- Describe your changes in detail -->
-Give a good explanation about this PR, including about the files you've changed.
+## 📝 Description
 
-## Related Issue 
-<!--- If suggesting a new feature or change, please discuss it in an issue first! -->
-<!--- If fixing a bug, there should be an issue describing it with steps to reproduce -->
-<!--- Please link to the issue here: -->
-Issue Title ([PR_ID](http://github.com/link_for_issue))
+Descreva suas alterações detalhadamente, incluindo os arquivos que foram modificados e o impacto dessas mudanças no projeto Next.js.
 
-## Steps to Reproduce
-<!--
-  How would you describe your issue to someone who doesn’t know you or your project?
-  Try to write a sequence of steps that anybody can repeat to see the issue.
--->
-`Write your steps here:`
+## 🔗 Issue Relacionada
 
-1. Sample
-2. Of
-3. Steps
+Título da Issue ([#ISSUE_ID](http://github.com/link_for_issue))
 
-## Types of changes
+## 🧪 Como testar
 
-<!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
+Como você descreveria seu problema para alguém que não conhece você ou seu projeto?
+Tente escrever uma sequência de passos que qualquer pessoa possa repetir para ver o problema/funcionalidade.
 
-- [ ] Docs change / refactoring / dependency upgrade
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to change)
+## 🏷️ Tipo de mudança
+
+<!--- Que tipos de mudanças seu código introduz? Marque um `x` em todas as caixas que se aplicam: -->
+
+- [ ] 📚 Documentação / refatoração / atualização de dependências
+- [ ] 🐛 Correção de bug (mudança que não quebra funcionalidade existente)
+- [ ] ✨ Nova funcionalidade (mudança que não quebra funcionalidade existente)
+- [ ] 💥 Breaking change (correção ou feature que causaria mudança na funcionalidade existente)
+- [ ] 🎨 Melhoria de UI/UX
+- [ ] ⚡ Melhoria de performance
+- [ ] 🔒 Correção de segurança
+
+## 📱 Screenshots/GIFs (se aplicável)
+
+<!--- Adicione screenshots ou GIFs para mudanças visuais -->
+
+| Antes         | Depois         |
+| ------------- | -------------- |
+| ![Antes](url) | ![Depois](url) |
+
+## ✅ Checklist
+
+- [ ] 📖 Atualizei a documentação (se necessário)
+- [ ] 🔍 Meu código segue os padrões do projeto

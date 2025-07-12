@@ -1,51 +1,77 @@
-# Contributing
+# 🤝 Como contribuir
 
-When contributing to this repository, please first discuss the change you wish to make via issue, with the owners of this repository before making a change.
+Suas contribuições são muito bem-vindas! Se você tem uma ideia de melhoria, correção de bug ou nova funcionalidade, sinta-se à vontade para abrir uma issue ou pull request. Colaboração e novas perspectivas são altamente valorizadas aqui—vamos construir algo incrível juntos!
 
-Please note we have a code of conduct, follow it in all your interactions with the project.
+Por favor, siga nosso código de conduta em todas as interações com o projeto.
 
-## Pull Request Process
+### Passo a passo para contribuir
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
-2. Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
+1. **Crie uma branch**: Sempre crie uma nova branch a partir da `master` usando o padrão `feature/xxx`, `fix/xxx` ou outro prefixo apropriado.
 
-## Code of Conduct
+2. **Faça commits pequenos e focados**: Cada commit deve representar uma alteração lógica única. Evite commits grandes com muitas mudanças não relacionadas. Isso facilita a revisão e validação do código.
 
-### Our Pledge
+3. **Padrão de mensagens de commit**: Todos os commits devem seguir a especificação [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) (Versionamento Semântico). Exemplos:
+   - `feat: adicionar funcionalidade de login do usuário`
+   - `fix: corrigir bug no login`
+   - `chore: atualizar dependências`
+   - `docs: atualizar README`
+   - `test: adicionar testes para login`
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, gender identity and expression, level of experience,
-nationality, personal appearance and religion.
 
-### Our Standards
+  > **Recomendações:**
+  > 
+  > Prefira escrever as mensagens de commit em português e sem acentuação. Isso facilita a padronização e evita problemas de encoding em diferentes sistemas.
+  >
+  > Apenas commits do tipo `feat` e `fix` geram tag de deploy e disparam uma release. Outros tipos como `chore`, `docs`, `test`, etc., não geram tag de deploy.
+  >
+  > Commits que não seguirem esse padrão **não** serão mergeados, pois quebram o processo de geração de release.
+  >
+  > Nem todos os commits precisam ser `feat` ou `fix`, mas sempre use o tipo correto para sua alteração.
 
-Examples of behavior that contributes to creating a positive environment
-include:
+4. **Pull Request (PR)**: Abra um PR para a `master` com um título claro e descritivo. Na descrição do PR, explique o que está sendo feito e por quê. Referencie issues relacionadas, se aplicável.
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+5. **Validação**: O workflow do PR irá validar seu código (testes, lint, etc). Só é possível fazer merge se **todos os checks passarem**.
 
-Examples of unacceptable behavior by participants include:
+6. **Release e Deploy**: Para detalhes sobre deploy e versionamento, consulte a [seção de Versionamento no README.md](./README.md).
 
-* The use of sexualized language or imagery
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Publishing others' private information, such as a physical or electronic address, without explicit permission
-* Patented code of third parties
-* Other conduct which could reasonably be considered inappropriate in a professional setting
+   > **Importante:** O Pull Request só será aceito se passar por todos os checks automáticos definidos no workflow `pr-checks.yml`.
 
-### Our Responsibilities
+Esse fluxo garante qualidade, rastreabilidade e entrega contínua de valor. Seguindo essas orientações você evita erros e agiliza o processo de revisão e release.
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+## 📜 Código de Conduta
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+### 📣 Nosso Compromisso
+
+No interesse de promover um ambiente aberto e acolhedor, nós, como
+contribuidores e mantenedores, nos comprometemos a tornar a participação em nosso projeto e
+nossa comunidade uma experiência livre de assédio para todos, independentemente de idade, porte físico,
+deficiência, etnia, identidade e expressão de gênero, nível de experiência,
+nacionalidade, aparência pessoal e religião.
+
+### 🌟 Nossos Padrões
+
+Exemplos de comportamentos que contribuem para criar um ambiente positivo
+incluem:
+
+- Ser respeitoso com diferentes pontos de vista e experiências
+- Aceitar críticas construtivas com elegância
+- Focar no que é melhor para a comunidade
+
+Exemplos de comportamentos inaceitáveis por participantes incluem:
+
+- O uso de linguagem ou imagens sexualizadas
+- Comentários insultuosos/depreciativos e ataques pessoais ou políticos
+- Publicar informações privadas de outros, como endereço físico ou eletrônico, sem permissão explícita
+- Código patenteado de terceiros
+- Outras condutas que poderiam ser razoavelmente consideradas inadequadas em um ambiente profissional
+
+### 🛡️ Nossas Responsabilidades
+
+Os mantenedores do projeto são responsáveis por esclarecer os padrões de comportamento
+aceitável e devem tomar ações corretivas apropriadas e justas em resposta
+a qualquer instância de comportamento inaceitável.
+
+Os mantenedores do projeto têm o direito e a responsabilidade de remover, editar ou
+rejeitar comentários, commits, código, edições de wiki, issues e outras contribuições
+que não estejam alinhadas a este Código de Conduta, ou banir temporária ou
+permanentemente qualquer contribuidor por outros comportamentos que considerem prejudiciais.
