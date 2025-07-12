@@ -1,129 +1,53 @@
+# Requisitos:
+# Configuração do repositório: Vá em Settings > Actions > General e na seção "Workflow permissions", certifique-se de que está marcado "Read and write permissions" E que "Allow GitHub Actions to create and approve pull requests" está HABILITADO
+
 name: Release
 
 on:
+  push:
+    branches:
+      - master
   workflow_dispatch:
-    inputs:
-      branch:
-        description: 'Branch to release from'
-        required: false
-        default: 'master'
-      release_type:
-        description: 'Type of release (major, minor, patch, prerelease)'
-        required: false
-        default: 'auto'
-        type: choice
-        options:
-          - auto
-          - patch
-          - minor
-          - major
-          - prerelease
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
 
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.branch }}
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run CI checks
-        run: npm run ci:check
-
-      - name: Build application
-        run: npm run build
-
-      - name: Configure Git
+      - name: Install semantic-release and plugins
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          npm install -g semantic-release @semantic-release/release-notes-generator @semantic-release/commit-analyzer @semantic-release/changelog @semantic-release/github conventional-changelog-conventionalcommits
 
-      - name: Generate release (auto)
-        if: ${{ inputs.release_type == 'auto' }}
-        run: npm run release
-
-      - name: Generate release (specific type)
-        if: ${{ inputs.release_type != 'auto' }}
-        run: |
-          if [ "${{ inputs.release_type }}" = "major" ]; then
-            npx standard-version --release-as major
-          elif [ "${{ inputs.release_type }}" = "minor" ]; then
-            npx standard-version --release-as minor
-          elif [ "${{ inputs.release_type }}" = "patch" ]; then
-            npx standard-version --release-as patch
-          elif [ "${{ inputs.release_type }}" = "prerelease" ]; then
-            npx standard-version --prerelease
-          fi
-          git push --follow-tags origin ${{ inputs.branch }}
-
-      - name: Get latest tag
-        id: get_tag
-        run: |
-          TAG=$(git describe --tags --abbrev=0)
-          echo "tag=$TAG" >> $GITHUB_OUTPUT
-          echo "version=${TAG#v}" >> $GITHUB_OUTPUT
-
-      - name: Create release artifact
-        run: |
-          tar -czf release-${{ steps.get_tag.outputs.version }}.tar.gz \
-            --exclude=node_modules \
-            --exclude=.git \
-            --exclude=.next/cache \
-            .
-
-      - name: Extract changelog for release
-        id: changelog
-        run: |
-          # Extract changelog for the current version
-          VERSION="${{ steps.get_tag.outputs.version }}"
-
-          # Get changelog between previous tag and current tag
-          PREV_TAG=$(git tag --sort=-version:refname | sed -n '2p')
-          if [ -z "$PREV_TAG" ]; then
-            CHANGELOG=$(git log --pretty=format:"* %s" ${{ steps.get_tag.outputs.tag }})
-          else
-            CHANGELOG=$(git log --pretty=format:"* %s" $PREV_TAG..${{ steps.get_tag.outputs.tag }})
-          fi
-
-          # Also get from CHANGELOG.md if it exists
-          if [ -f "CHANGELOG.md" ]; then
-            # Extract the section for this version from CHANGELOG.md
-            CHANGELOG_SECTION=$(sed -n "/## \[$VERSION\]/,/## \[/p" CHANGELOG.md | sed '$ d' | tail -n +2)
-            if [ ! -z "$CHANGELOG_SECTION" ]; then
-              CHANGELOG="$CHANGELOG_SECTION"
-            fi
-          fi
-
-          # Save changelog to file to handle multiline
-          echo "$CHANGELOG" > /tmp/changelog.txt
-          echo "changelog_file=/tmp/changelog.txt" >> $GITHUB_OUTPUT
-
-      - name: Create GitHub Release
-        id: create_release
-        uses: softprops/action-gh-release@v1
+      - name: Run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          semantic-release
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
         with:
-          tag_name: ${{ steps.get_tag.outputs.tag }}
-          name: Release ${{ steps.get_tag.outputs.tag }}
-          body_path: ${{ steps.changelog.outputs.changelog_file }}
-          draft: false
-          prerelease: ${{ contains(steps.get_tag.outputs.tag, 'alpha') || contains(steps.get_tag.outputs.tag, 'beta') || contains(steps.get_tag.outputs.tag, 'rc') }}
-          files: |
-            release-${{ steps.get_tag.outputs.version }}.tar.gz
+          commit-message: "chore(release): update CHANGELOG"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: release/auto-version-update
+          title: 'chore(release): release: update version and changelog files'
+          body: 'This PR updates CHANGELOG.md with the new version generated by the automated release.'
+          base: master
+          add-paths: |
+            CHANGELOG.md
+          delete-branch: true
