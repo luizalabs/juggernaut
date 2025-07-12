@@ -9,7 +9,7 @@ describe('config', () => {
     process.env.NEXT_PUBLIC_GA_TRACKING_ID = '';
   });
 
-  it('deve ter a estrutura correta', () => {
+  it('should have correct structure', () => {
     expect(config).toHaveProperty('api');
     expect(config).toHaveProperty('google');
     expect(config.api).toHaveProperty('baseUrl');
@@ -17,13 +17,13 @@ describe('config', () => {
     expect(config.google).toHaveProperty('ga');
   });
 
-  it('deve popular os valores a partir das variáveis de ambiente', () => {
+  it('should populate values from environment variables', () => {
     expect(config.api.baseUrl).toBe('https://api.test.com');
     expect(config.google.siteVerification).toBe('site-verification-token');
     expect(config.google.ga).toBe('GA-123456');
   });
 
-  it('deve retornar string vazia se variáveis não estiverem definidas', () => {
+  it('should return empty string if variables are not defined', () => {
     process.env.NEXT_PUBLIC_API_URL = '';
     process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION = '';
     process.env.NEXT_PUBLIC_GA_ID = '';

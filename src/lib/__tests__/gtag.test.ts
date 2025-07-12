@@ -3,7 +3,6 @@ const mockGtag = jest.fn();
 describe('gtag utilities', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    // Reset window.gtag
     Object.defineProperty(window, 'gtag', {
       value: mockGtag,
       writable: true,

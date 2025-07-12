@@ -2,7 +2,6 @@ import { renderHook, act } from '@testing-library/react';
 import { useGoogleAnalytics } from '../useGoogleAnalytics';
 import * as gtag from '@lib/gtag';
 
-// Mock the gtag module
 jest.mock('@lib/gtag', () => ({
   event: jest.fn(),
   isGAEnabled: jest.fn(() => true),

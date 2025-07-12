@@ -2,7 +2,6 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { Button, Card, Grid, TailWindExamples } from '../TailwindExamples';
 
-// Mock the cn utility
 jest.mock('@shared/utils/cn', () => ({
   cn: jest.fn((...classes) => classes.filter(Boolean).join(' ')),
 }));
@@ -357,7 +356,6 @@ describe('TailWindExamples Component', () => {
   it('renders color palette section', () => {
     render(<TailWindExamples />);
     expect(screen.getByText('Paleta de Cores')).toBeInTheDocument();
-    // Use getAllByText to handle duplicate texts that appear in both buttons and color palette
     const primaryTexts = screen.getAllByText('Primary');
     expect(primaryTexts.length).toBeGreaterThan(0);
     const secondaryTexts = screen.getAllByText('Secondary');
@@ -389,12 +387,10 @@ describe('TailWindExamples Component', () => {
     render(<TailWindExamples />);
     const primaryButton = screen.getByRole('button', { name: 'Primary' });
     fireEvent.click(primaryButton);
-    // Button doesn't have onClick handler in the example, so just verify it's clickable
     expect(primaryButton).toBeInTheDocument();
   });
 });
 
-// Test coverage for buttonVariants object
 describe('Button Variants and Sizes Coverage', () => {
   it('covers all button variants', () => {
     const variants = ['primary', 'secondary', 'outline', 'ghost'] as const;
@@ -417,7 +413,6 @@ describe('Button Variants and Sizes Coverage', () => {
   });
 });
 
-// Test coverage for gridCols and gridGaps objects
 describe('Grid Configuration Coverage', () => {
   it('covers all grid column configurations', () => {
     const colOptions = [1, 2, 3, 4, 6] as const;
