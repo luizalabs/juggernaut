@@ -67,8 +67,7 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": ">=14",
-    "npm": ">=6"
+    "node": ">=22"
   },
   "author": "Stanley Gomes <stanleygomesdasilva@gmail.com>",
   "contributors": [
