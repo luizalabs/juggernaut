@@ -42,7 +42,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "chore(release): update CHANGELOG"
+          commit-message: 'chore(release): update CHANGELOG'
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: release/auto-version-update
           title: 'chore(release): release: update version and changelog files'
