@@ -17,9 +17,9 @@ jest.mock('next/navigation', () => ({
   usePathname: () => '/',
 }));
 
-process.env.NEXT_PUBLIC_GA_ID = 'G-TEST123456';
+process.env.NEXT_PUBLIC_GA_ID = 'GA-123456';
 process.env.NEXT_PUBLIC_API_URL = 'https://api.test.com';
-process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION = 'test-verification';
+process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION = 'site-verification-token';
 
 Object.defineProperty(window, 'gtag', {
   value: jest.fn(),

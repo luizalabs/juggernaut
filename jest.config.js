@@ -1,4 +1,4 @@
-import createJestConfig from 'next/jest';
+const createJestConfig = require('next/jest');
 
 const jestConfigFactory = createJestConfig({
   dir: './',
@@ -40,12 +40,7 @@ const customJestConfig = {
     '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  testPathIgnorePatterns: [
-    '<rootDir>/.next/',
-    '<rootDir>/node_modules/',
-    '<rootDir>/src/lib/__tests__/gtag.test.ts',
-    '<rootDir>/src/shared/hooks/__tests__/useGoogleAnalytics.test.ts',
-  ],
+  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
 };
 
 module.exports = jestConfigFactory(customJestConfig);
