@@ -32,3 +32,6 @@ coverage
 
 # Firebase
 .firebase
+
+# Editor
+.idea
