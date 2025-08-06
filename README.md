@@ -1,11 +1,11 @@
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/luizalabs/noahjs)
-![GitHub stars](https://img.shields.io/github/stars/luizalabs/noahjs?style=social)
-![GitHub forks](https://img.shields.io/github/forks/luizalabs/noahjs?style=social)
 ![Build Status](https://img.shields.io/github/actions/workflow/status/luizalabs/noahjs/deploy.yml)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ![Open Issues](https://img.shields.io/github/issues/luizalabs/noahjs)
 ![Contributors](https://img.shields.io/github/contributors/luizalabs/noahjs)
+![GitHub stars](https://img.shields.io/github/stars/luizalabs/noahjs?style=social)
+![GitHub forks](https://img.shields.io/github/forks/luizalabs/noahjs?style=social)
 
 # 🚀 Noahjs Template
 
@@ -20,7 +20,6 @@ O template Next.js moderno e opinativo para iniciar projetos rapidamente, seguin
 - **Framework**: Next.js (App Router)
 - **Linguagem**: TypeScript
 - **Estilização**: Tailwind CSS
-- **Arquitetura**: Feature-Based Architecture
 - **Arquitetura**: Feature-Based Architecture
 - **Containers**: Podman e Podman Compose
 - **Node.js**: >= 22.x
